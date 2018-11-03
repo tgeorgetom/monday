@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    #Hero Banner
+\*------------------------------------*/
+
+.hero-banner-content{
+	padding: 60px 0;
+	background-color: #82968c;
+	height: 572px;
+	position: relative;
+
+	h1{
+		font-size: 80px;
+		font-weight: 900;
+		line-height: 1.63;
+		color: $color-white;
+		max-width: 876px;
+	}
+	p{
+		font-size: 25px;
+		font-weight: 900;
+		line-height: 1.76;
+		color: $color-white;
+	}
+
+	.hero-down-arrow {
+	    font-size: 30px;
+	    color: #fff;
+	    position: absolute;
+	    bottom: 32px;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    text-align: center;
+	    height: 36px;
+	    width: 36px;
+	    line-height: 42px;
+	    border: 1px solid #fff;
+	    border-radius: 50%;
+
+	    &:after {
+		    content: "";
+		    position: absolute;
+		    left: 0;
+		    height: 13px;
+		    width: 3px;
+		    background: #fff;
+		    top: 10px;
+		    right: 0;
+		    margin: 0 auto;
+	    }
+	}
+
+
+	@media (max-width: 767px){
+		padding: 60px 0 100px;
+		height: auto;
+
+		h1{
+			font-size: 55px;
+		}
+		p{
+			font-size: 20px;
+		}
+	}
+}

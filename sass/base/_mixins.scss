@@ -1,0 +1,76 @@
+
+/**
+ * Gradient Animation 
+ */
+ 
+@mixin Gradient() {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/**
+ * Grain background 
+ */
+
+@mixin grain-bg() {
+	position: relative;
+
+	&:before, &:after{
+		content: "";
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: -1;
+	}
+	&:before{
+		background: $color-white;
+	}
+	&:after{
+		background-image: url(../images/bg-pattern.jpg);
+		background-repeat: repeat;
+	}
+}

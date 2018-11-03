@@ -1,0 +1,20 @@
+$font: 'Work Sans', sans-serif;
+
+
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ */
+ 
+$color-white: #fff;
+$color-blue: #4496e3;
+$color-red: #ff1654;
+
+$text-1: #333132;
+$text-2: #4a4a4a;
+
+$bg-1: #f9f9f9;
+$bg-2: #001a29;
+$bg-3: #006cab;

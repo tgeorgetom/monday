@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+
+/**
+ * Use border box on all elements
+ */
+ * { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+/**
+ * Zero out margin and padding on most elements as base style
+ */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure { 
+	margin: 0; 
+	padding: 0; 
+} 
+
+/**
+ * Display block as base for these elements
+ */
+header, footer, nav, section, article, hgroup, figure {
+	display: block;	
+}
+
+/**
+ * Display block as base for these elements
+ */
+
+li {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/**
+ * Bootstrap
+ */
+
+@media (max-width: 768px){
+	.container{
+		width: 100%;
+		max-width: none;
+	}
+}
+
+/**
+ * Common
+ */
+
+.h2{
+	font-size: 44px;
+	font-weight: 900;
+	line-height: 1.41;
+	text-align: center;
+	color: $text-1;
+
+	@media (max-width: 768px){
+		font-size: 38px;
+	}
+}
+
