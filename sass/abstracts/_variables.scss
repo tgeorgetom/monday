@@ -1,4 +1,17 @@
-$font: 'Work Sans', sans-serif;
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),  
+  url('../../fonts/AvenirLTStd-Medium.otf')  format('opentype'),
+  url('../../fonts/AvenirLTStd-Medium.woff') format('woff'), 
+  url('../../fonts/AvenirLTStd-Medium.ttf')  format('truetype'), 
+  url('../../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font: 'Avenir', sans-serif;
 
 
 /*

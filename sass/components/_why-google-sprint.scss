@@ -1,0 +1,49 @@
+.why-google-sprint{
+	padding-top: 100px;
+	.h2{
+		padding-bottom: 76px;
+	}
+	.why-GS-left{
+		border-top: 12px solid #f9cb53;
+	}
+	.why-GS-right{
+		border-top: 12px solid #cb8589;
+	}
+	.why-GS-content{
+		padding-bottom: 86px;
+
+		h4{
+			padding: 55px 50px;
+			font-size: 32px;
+  			font-weight: 900;
+  			line-height: 1.31;
+		}
+		.why-GS-contain{
+			padding: 55px 50px 50px 50px;
+			background-color: #f9f9f9;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+			height: 100%;
+		    min-height: 420px;
+
+			h5, p{
+				font-size: 25px;
+				line-height: 1.68;
+			}
+			h5{
+				font-weight: 900;
+			}
+		}
+	}
+
+	.section-img-banner img{
+		height: 556px;
+	}
+}
+
+.section-img-banner{
+	img{
+		height: 500px;
+		object-fit: cover;
+		width: 100%;
+	}
+}

@@ -42,6 +42,13 @@ a{
  * Bootstrap
  */
 
+@media (min-width: 768px) and (max-width: 992px){
+	.container{
+		width: 100%;
+		max-width: none;
+	}
+}
+
 @media (max-width: 768px){
 	.container{
 		width: 100%;
@@ -59,9 +66,15 @@ a{
 	line-height: 1.41;
 	text-align: center;
 	color: $text-1;
+	margin: 0;
 
 	@media (max-width: 768px){
 		font-size: 38px;
 	}
+}
+
+.section-container{
+	max-width: 966px;
+	margin: 0 auto;
 }
 

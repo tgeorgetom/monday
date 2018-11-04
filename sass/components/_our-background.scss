@@ -1,0 +1,79 @@
+.our-bg-wrapper{
+	padding: 50px 0 0;
+	.h2{
+		padding-bottom: 63px;
+	}
+	.our-bg-head{
+		font-size: 25px;
+		font-weight: 900;
+		line-height: 1.68;
+		color: #333333;
+		padding-bottom: 22px;
+	}
+	.our-bg-desc li{
+		font-size: 25px;
+		color: #333132;
+		line-height: 2;
+		font-weight: 300;
+	}
+
+	.our-bg-profiles{
+		padding-top: 167px;
+
+		.our-bg-head{
+			font-weight: 600;
+			padding-bottom: 0;
+		}
+
+		.our-bg-head, li{
+			line-height: 2.22;
+			font-size: 18px;
+		}
+		.our-bg-profile img{
+			height: 280px;
+			max-width: 100%;
+			object-fit: cover;
+			margin: 0 auto;
+		}
+		.our-bg-profile-content{
+			padding-top: 34px;
+			display: table;
+			margin: 0 auto;
+		}
+	}
+
+
+	@media (max-width: 767px){
+	padding: 50px 0;
+
+	.our-bg-desc{
+
+		.our-bg-desc-content{
+			padding-bottom: 30px;
+		}
+
+		.col-md-4:last-child .our-bg-desc-content{
+			padding-bottom: 0;
+		}
+	}
+
+	.our-bg-profiles{
+		.our-bg-profile img{
+			width: 100%;
+			height: auto;
+		}
+		.our-bg-profile-content{
+			padding-top: 20px;
+		}
+
+		.our-bg-profile{
+			padding-bottom: 50px;	
+		}
+		.col-md-4:last-child .our-bg-profile{
+			padding-bottom: 0;
+		}
+	}
+	
+	
+	}
+}

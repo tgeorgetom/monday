@@ -1,0 +1,20 @@
+.fortune-company-wrapper{
+	text-align: center;
+
+	.fortune-company-desc{
+		color: #333132;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.fortune-company-content{
+		
+		ul{
+			display: table;
+			li{
+				display: table-cell;
+			}
+		}	
+
+	}
+}

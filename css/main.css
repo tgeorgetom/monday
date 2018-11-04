@@ -1,6 +1,11 @@
 /**
  *  Abstracts
  */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirLTStd-Medium.otf") format("opentype"), url("../../fonts/AvenirLTStd-Medium.woff") format("woff"), url("../../fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("../../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*
  * Neutral Colors
  * 1) Neutral color variables use a numbered system to define variables for better maintainability.
@@ -73,6 +78,10 @@ a {
 /**
  * Bootstrap
  */
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: none; } }
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -85,10 +94,15 @@ a {
   font-weight: 900;
   line-height: 1.41;
   text-align: center;
-  color: #333132; }
+  color: #333132;
+  margin: 0; }
   @media (max-width: 768px) {
     .h2 {
       font-size: 38px; } }
+
+.section-container {
+  max-width: 966px;
+  margin: 0 auto; }
 
 /*------------------------------------*\
     #BODY
@@ -101,7 +115,7 @@ body {
   background-color: #fff; }
 
 * {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   box-sizing: border-box; }
 
@@ -232,6 +246,215 @@ body, html {
   @media (max-width: 767px) {
     .get-in-touch {
       padding: 90px 0; } }
+
+.google-sprint-wrapper {
+  padding: 95px 0; }
+  .google-sprint-wrapper .google-sprint-left .h2 {
+    color: #fbb13c;
+    text-align: left;
+    line-height: 1.41; }
+  .google-sprint-wrapper .google-sprint-left .h2.desc {
+    color: #333132;
+    font-weight: 400; }
+  .google-sprint-wrapper .google-sprint-right form {
+    max-width: 432px; }
+  .google-sprint-wrapper .google-sprint-right .form-label {
+    font-size: 14px;
+    margin-bottom: 9px;
+    color: #333132;
+    text-align: center;
+    display: block; }
+  .google-sprint-wrapper .google-sprint-right .form-check-label {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #82968c;
+    padding: 10px;
+    margin-bottom: 18px;
+    position: relative; }
+    .google-sprint-wrapper .google-sprint-right .form-check-label input {
+      position: absolute;
+      opacity: 0; }
+    .google-sprint-wrapper .google-sprint-right .form-check-label span {
+      color: #333132; }
+    .google-sprint-wrapper .google-sprint-right .form-check-label span:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0; }
+    .google-sprint-wrapper .google-sprint-right .form-check-label input:checked ~ span, .google-sprint-wrapper .google-sprint-right .form-check-label input:checked ~ span:after {
+      background: #fbb13c;
+      opacity: 1;
+      color: #fff; }
+  .google-sprint-wrapper .google-sprint-right .email-wrapper {
+    position: relative; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper input {
+      border-radius: 0;
+      border: 1px solid #82968c;
+      padding: 10px 50px 10px 30px;
+      height: auto; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper i {
+      position: absolute;
+      font-size: 22px;
+      color: #c9dde5;
+      right: 10px;
+      top: 12px;
+      bottom: 0; }
+  .google-sprint-wrapper .google-sprint-right .google-sprint-submit {
+    margin: 27px auto 0;
+    background-color: #fbb13c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    max-width: 231px;
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    padding: 15px 0;
+    border: none; }
+  @media (max-width: 767px) {
+    .google-sprint-wrapper {
+      padding: 50px 0; }
+      .google-sprint-wrapper .google-sprint-left {
+        padding-bottom: 30px; }
+      .google-sprint-wrapper .google-sprint-right form {
+        margin: 0 auto; } }
+
+.fortune-company-wrapper {
+  text-align: center; }
+  .fortune-company-wrapper .fortune-company-desc {
+    color: #333132;
+    max-width: 800px;
+    margin: 0 auto; }
+  .fortune-company-wrapper .fortune-company-content ul {
+    display: table; }
+    .fortune-company-wrapper .fortune-company-content ul li {
+      display: table-cell; }
+
+.our-bg-wrapper {
+  padding: 50px 0 0; }
+  .our-bg-wrapper .h2 {
+    padding-bottom: 63px; }
+  .our-bg-wrapper .our-bg-head {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.68;
+    color: #333333;
+    padding-bottom: 22px; }
+  .our-bg-wrapper .our-bg-desc li {
+    font-size: 25px;
+    color: #333132;
+    line-height: 2;
+    font-weight: 300; }
+  .our-bg-wrapper .our-bg-profiles {
+    padding-top: 167px; }
+    .our-bg-wrapper .our-bg-profiles .our-bg-head {
+      font-weight: 600;
+      padding-bottom: 0; }
+    .our-bg-wrapper .our-bg-profiles .our-bg-head, .our-bg-wrapper .our-bg-profiles li {
+      line-height: 2.22;
+      font-size: 18px; }
+    .our-bg-wrapper .our-bg-profiles .our-bg-profile img {
+      height: 280px;
+      max-width: 100%;
+      object-fit: cover;
+      margin: 0 auto; }
+    .our-bg-wrapper .our-bg-profiles .our-bg-profile-content {
+      padding-top: 34px;
+      display: table;
+      margin: 0 auto; }
+  @media (max-width: 767px) {
+    .our-bg-wrapper {
+      padding: 50px 0; }
+      .our-bg-wrapper .our-bg-desc .our-bg-desc-content {
+        padding-bottom: 30px; }
+      .our-bg-wrapper .our-bg-desc .col-md-4:last-child .our-bg-desc-content {
+        padding-bottom: 0; }
+      .our-bg-wrapper .our-bg-profiles .our-bg-profile img {
+        width: 100%;
+        height: auto; }
+      .our-bg-wrapper .our-bg-profiles .our-bg-profile-content {
+        padding-top: 20px; }
+      .our-bg-wrapper .our-bg-profiles .our-bg-profile {
+        padding-bottom: 50px; }
+      .our-bg-wrapper .our-bg-profiles .col-md-4:last-child .our-bg-profile {
+        padding-bottom: 0; } }
+
+.about-us-wrapper {
+  padding: 76px 0 50px; }
+  .about-us-wrapper .h2 {
+    padding-bottom: 52px; }
+  .about-us-wrapper .about-us-head {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.31;
+    padding-bottom: 47px; }
+  .about-us-wrapper .our-vision {
+    padding-bottom: 107px; }
+  .about-us-wrapper .about-us-section h5 {
+    padding-bottom: 44px; }
+  .about-us-wrapper .about-us-section h5, .about-us-wrapper .about-us-section p {
+    font-size: 25px;
+    line-height: 1.68;
+    max-width: 600px;
+    color: #333132; }
+  .about-us-wrapper .about-us-section img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 767px) {
+    .about-us-wrapper .about-us-section img {
+      margin: 50px auto 0; } }
+
+.why-google-sprint {
+  padding-top: 100px; }
+  .why-google-sprint .h2 {
+    padding-bottom: 76px; }
+  .why-google-sprint .why-GS-left {
+    border-top: 12px solid #f9cb53; }
+  .why-google-sprint .why-GS-right {
+    border-top: 12px solid #cb8589; }
+  .why-google-sprint .why-GS-content {
+    padding-bottom: 86px; }
+    .why-google-sprint .why-GS-content h4 {
+      padding: 55px 50px;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1.31; }
+    .why-google-sprint .why-GS-content .why-GS-contain {
+      padding: 55px 50px 50px 50px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      height: 100%;
+      min-height: 420px; }
+      .why-google-sprint .why-GS-content .why-GS-contain h5, .why-google-sprint .why-GS-content .why-GS-contain p {
+        font-size: 25px;
+        line-height: 1.68; }
+      .why-google-sprint .why-GS-content .why-GS-contain h5 {
+        font-weight: 900; }
+  .why-google-sprint .section-img-banner img {
+    height: 556px; }
+
+.section-img-banner img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%; }
+
+.how-google-sprint {
+  padding-top: 57px; }
+  .how-google-sprint .h2 {
+    padding-bottom: 19px; }
+  .how-google-sprint .how-google-sprint-head p {
+    color: #333132;
+    font-size: 25px;
+    line-height: 1.68;
+    text-align: center; }
 
 footer {
   background-color: #c9dde5;
