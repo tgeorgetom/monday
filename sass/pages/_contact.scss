@@ -1,0 +1,47 @@
+.contact-us .navbar-light .navbar-nav .nav-link.active{
+	color: #ea5752;
+
+	&:after{
+		opacity: 1;
+		width: 100%;
+	}
+}
+.talk-to-us{
+	.h2{
+		padding: 38px 0 52px;
+	}	
+	.talk-to-us-content{
+		padding: 100px 0;
+		background-color: #48b8d0;
+		text-align: center;
+		.h2{
+			color: #fff;
+			padding:0 60px 0 0;
+		}
+		.h2, button{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		button{
+			font-size: 17px;
+			font-weight: 900;
+			line-height: 1.94;
+			color: #48b8d0;
+			padding: 18px;
+			background-color: #fff;
+			border: none;
+			max-width: 289px;
+			width: 100%;
+			cursor: pointer;
+			box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+			border-radius: 2.5px;
+		}
+	}
+	@media (max-width: 767px){
+		.talk-to-us-content{
+			.h2{
+				padding: 0 0 30px 0;
+			}
+		}
+	}
+}

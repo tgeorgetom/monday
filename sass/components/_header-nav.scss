@@ -7,6 +7,14 @@
 		height: 54px;
 		width: 54px;
 	}
+	.nav-item{
+		padding: 0 15px;
+	}
+	@media (max-width: 767px){
+		.nav-item{
+			padding: 0;
+		}	
+	}
 }
 
 
@@ -14,7 +22,27 @@
 	color: $text-1;
 }
 .navbar-expand-md .navbar-nav .nav-link{
-	padding: 20px 30px;
+	padding: 10px;
+	position: relative;
+
+	&:after{
+		position: absolute;
+		content: "";
+		height: 1px;
+		width: 0%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #ea5752;
+		opacity: 0;
+		transition: all 0.2s linear 0s;
+		margin: 0 auto;
+	}
+
+	&:hover:after{
+		opacity: 1;
+		width: 100%;
+	}
 
 	@media (max-width: 767px){
 		padding: 15px 0px;

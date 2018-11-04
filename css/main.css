@@ -184,12 +184,33 @@ body, html {
   .navbar .header-logo {
     height: 54px;
     width: 54px; }
+  .navbar .nav-item {
+    padding: 0 15px; }
+  @media (max-width: 767px) {
+    .navbar .nav-item {
+      padding: 0; } }
 
 .navbar-light .navbar-nav .nav-link {
   color: #333132; }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  padding: 20px 30px; }
+  padding: 10px;
+  position: relative; }
+  .navbar-expand-md .navbar-nav .nav-link:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ea5752;
+    opacity: 0;
+    transition: all 0.2s linear 0s;
+    margin: 0 auto; }
+  .navbar-expand-md .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    width: 100%; }
   @media (max-width: 767px) {
     .navbar-expand-md .navbar-nav .nav-link {
       padding: 15px 0px; } }
@@ -455,6 +476,144 @@ body, html {
     font-size: 25px;
     line-height: 1.68;
     text-align: center; }
+  .how-google-sprint .how-gs-link {
+    text-align: center;
+    color: #1b9aaa;
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.68;
+    margin-bottom: 76px; }
+  .how-google-sprint .how-gs-contents {
+    text-align: center;
+    position: relative;
+    padding-top: 66px; }
+    .how-google-sprint .how-gs-contents:after {
+      content: "";
+      height: 90%;
+      background: #c9dde5;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: block;
+      height: 240px;
+      bottom: 10%;
+      z-index: -1; }
+    .how-google-sprint .how-gs-contents .how-gs-content button {
+      background-color: #1b9aaa;
+      font-size: 14px;
+      font-weight: 900;
+      max-width: 231px;
+      padding: 15px;
+      margin-bottom: 32px;
+      color: #fff;
+      text-transform: uppercase;
+      width: 100%; }
+    .how-google-sprint .how-gs-contents .how-gs-content h3 {
+      background-color: #333132;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.62;
+      padding: 15px; }
+    .how-google-sprint .how-gs-contents .how-gs-content p {
+      min-height: 145px;
+      padding: 50px 0;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      font-size: 25px;
+      color: #333132;
+      background-color: #fff; }
+    .how-google-sprint .how-gs-contents .how-gs-content .how-gs-tags {
+      display: table;
+      width: 100%; }
+      .how-google-sprint .how-gs-contents .how-gs-content .how-gs-tags ul {
+        vertical-align: top;
+        display: table-cell; }
+      .how-google-sprint .how-gs-contents .how-gs-content .how-gs-tags li {
+        max-width: 247px;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        margin-bottom: 30px; }
+
+.cases-hero-banner {
+  background-color: #48b8d0; }
+  .cases-hero-banner .navbar-light .navbar-nav .nav-link {
+    color: #fff; }
+  .cases-hero-banner .navbar-expand-md .navbar-nav .nav-link:after {
+    background-color: #fff; }
+  .cases-hero-banner .cases-banner-content {
+    padding: 80px 0 95px; }
+    .cases-hero-banner .cases-banner-content h1 {
+      font-size: 70px;
+      font-weight: 900;
+      line-height: 1.43;
+      color: #fff; }
+
+.testimony {
+  padding: 61px 0 68px; }
+  .testimony .testimony-content {
+    max-width: 475px;
+    margin: 0 auto; }
+    .testimony .testimony-content .testimony-desc {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.68; }
+    .testimony .testimony-content .media {
+      max-width: 170px;
+      margin: 27px auto 0; }
+      .testimony .testimony-content .media img {
+        height: 50px;
+        width: 50px;
+        border: 5px solid #fff;
+        border-radius: 50px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        margin-right: 27px; }
+      .testimony .testimony-content .media h5, .testimony .testimony-content .media p {
+        font-size: 17px;
+        line-height: 2;
+        text-align: left; }
+      .testimony .testimony-content .media h5 {
+        font-weight: 900;
+        color: #333132; }
+      .testimony .testimony-content .media p {
+        color: #82968c; }
+
+.cases-wrapper .h2 {
+  padding-bottom: 53px; }
+.cases-wrapper .cases-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 120px; }
+  .cases-wrapper .cases-section:last-child {
+    padding-bottom: 0; }
+.cases-wrapper .cases-container {
+  padding-bottom: 83px; }
+  .cases-wrapper .cases-container:last-child {
+    padding-bottom: 0; }
+  .cases-wrapper .cases-container img {
+    width: 100%; }
+  .cases-wrapper .cases-container h5 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: #333132;
+    padding-bottom: 40px; }
+  .cases-wrapper .cases-container p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 2.21; }
+  .cases-wrapper .cases-container a {
+    color: #48b8d0; }
+@media (max-width: 767px) {
+  .cases-wrapper .cases-section {
+    padding-bottom: 80px; }
+  .cases-wrapper .cases-container .cases-container-left {
+    padding: 30px 0 0; }
+  .cases-wrapper .cases-container h5 {
+    padding-bottom: 20px; } }
 
 footer {
   background-color: #c9dde5;
@@ -492,5 +651,40 @@ footer {
       text-align: center; }
       footer .footer-social li {
         padding: 0 20px; } }
+
+.contact-us .navbar-light .navbar-nav .nav-link.active {
+  color: #ea5752; }
+  .contact-us .navbar-light .navbar-nav .nav-link.active:after {
+    opacity: 1;
+    width: 100%; }
+
+.talk-to-us .h2 {
+  padding: 38px 0 52px; }
+.talk-to-us .talk-to-us-content {
+  padding: 100px 0;
+  background-color: #48b8d0;
+  text-align: center; }
+  .talk-to-us .talk-to-us-content .h2 {
+    color: #fff;
+    padding: 0 60px 0 0; }
+  .talk-to-us .talk-to-us-content .h2, .talk-to-us .talk-to-us-content button {
+    display: inline-block;
+    vertical-align: middle; }
+  .talk-to-us .talk-to-us-content button {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.94;
+    color: #48b8d0;
+    padding: 18px;
+    background-color: #fff;
+    border: none;
+    max-width: 289px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2.5px; }
+@media (max-width: 767px) {
+  .talk-to-us .talk-to-us-content .h2 {
+    padding: 0 0 30px 0; } }
 
 /*# sourceMappingURL=main.css.map */
