@@ -1,10 +1,12 @@
 .contact-us .navbar-light .navbar-nav .nav-link.active{
-	color: #ea5752;
 
 	&:after{
 		opacity: 1;
 		width: 100%;
 	}
+}
+.contact-us .navbar{
+	background-color: transparent !important;
 }
 .talk-to-us{
 	.h2{

@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .hero-banner-content{
-	padding: 60px 0;
+	padding: 140px 0 60px;
 	background-color: #82968c;
 	height: 572px;
 	position: relative;
@@ -13,6 +13,7 @@
 		font-weight: 900;
 		line-height: 1.63;
 		color: $color-white;
+		word-break: break-word;
 		max-width: 876px;
 	}
 	p{
@@ -52,7 +53,7 @@
 
 
 	@media (max-width: 767px){
-		padding: 60px 0 100px;
+		padding: 100px 0 100px;
 		height: auto;
 
 		h1{

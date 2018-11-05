@@ -1,3 +1,8 @@
+/*------------------------------------*\
+    #Google Sprint 
+\*------------------------------------*/
+
+
 .google-sprint-wrapper{
 	padding: 95px 0;
 
@@ -25,6 +30,7 @@
 			color: #333132;
 			text-align: center;
 			display: block;
+			font-weight: 500;
 		}
 		.form-check-label{
 			display: block;
@@ -35,13 +41,20 @@
 			margin-bottom: 18px;
 			position: relative;
 			overflow: hidden;
+			@include ease-2();
+
+			&:hover{
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+			}
 
 			input{
 				position: absolute;
 				opacity: 0;
 			}
+
 			span{
 				color: #333132;
+				font-weight: 500;
 			}
 			span:after{
 				content: "";
@@ -54,9 +67,10 @@
 				width: 100%;
 				z-index: -1;
 				opacity: 0;
+				@include ease-5();
+				background: #82968c;
 			}
 			input:checked ~ span, input:checked ~ span:after{
-				background: #fbb13c;
 				opacity: 1;
 				color: #fff;
 
@@ -70,7 +84,24 @@
 				border: 1px solid #82968c;
 				padding: 10px 50px 10px 30px;
 				height: auto;
+
+				&:hover{
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+				}
+				&.valid{
+					background: #fff;
+				}
 			}
+			#email-error{
+				display: none !important;
+			}
+
+			&.success{
+				i{
+					color: #7ed321;
+				}
+			}
+
 			i{
 				position: absolute;
 				font-size: 22px;

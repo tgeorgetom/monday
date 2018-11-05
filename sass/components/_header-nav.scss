@@ -1,7 +1,15 @@
+/*------------------------------------*\
+    #Navbar
+\*------------------------------------*/
+
+
 .navbar{
-	padding-left: 0;
-	padding-right: 0;
-	background-color: transparent !important; 
+	background-color: #fff !important; 
+	@include ease-2();
+
+	&.fixed-navbar{
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
 
 	.header-logo{
 		height: 54px;
@@ -20,6 +28,11 @@
 
 .navbar-light .navbar-nav .nav-link{
 	color: $text-1;
+}
+.navbar-light .navbar-nav .nav-item:last-child{
+	.nav-link{
+		color: #ea5752;
+	}
 }
 .navbar-expand-md .navbar-nav .nav-link{
 	padding: 10px;

@@ -24,8 +24,9 @@
 		line-height: 1.68;
 		margin-bottom: 76px;
 	}
+}
 
-	.how-gs-contents{
+	.tag-contents{
 		text-align: center;
 		position: relative;
 		padding-top: 66px;
@@ -44,7 +45,8 @@
 			z-index: -1;
 		}
 
-		.how-gs-content{
+		.tag-content {
+
 			button{
 				background-color: #1b9aaa;
 				font-size: 14px;
@@ -55,6 +57,11 @@
 				color: #fff;
 				text-transform: uppercase;
 				width: 100%;
+				border: none;
+				border-radius: 2px;
+			}
+			.btn-remote{
+				background-color: #fbb13c;
 			}
 			h3{
 				background-color: #333132;
@@ -63,9 +70,9 @@
 				font-weight: 900;
 				line-height: 1.62;
 				padding: 15px;
+				border-radius: 2px 2px 0 0;
 			}
 			p{
-				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 			    font-size: 25px;
 			    color: #333132;
 			    background-color: #fff;
@@ -73,12 +80,13 @@
 			    height: 160px;
 			    width: 100%;
 			    vertical-align: middle;
+			    border-radius: 0 0 2px 2px;
 			}
 			.tag-wrap {
 			    display: table;
 			    width: 100%;
 			}
-			.how-gs-tags{
+			.tags-in{
 				display: table;
 				width: 100%;
 
@@ -91,10 +99,10 @@
 					display: inline-block;
 					vertical-align: top;
 					width: 100%;
-					margin-bottom: 30px;
+					margin: 0 10px 30px 10px;
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 				}
 			}
 		}
 
 	}
-}

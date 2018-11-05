@@ -1,19 +1,19 @@
-.GS-video-wrapper{
+.DS-video-wrapper{
 	padding-top: 39px;
 
 	.h2{
 		padding-bottom: 50px;
 	}
-	.GS-video-content{
+	.DS-video-content{
 		background-color: #f9f9f9;
 		padding: 62px 0;
 	}
-	.GS-video-left{
+	.DS-video-left{
 		img, video{
 			width: 100%;
 		}
 	}
-	.GS-video-right{
+	.DS-video-right{
 		img{
 			height: 76px;
 			width: 76px;
@@ -34,7 +34,7 @@
 	}
 
 	@media (max-width: 767px){
-		.GS-video-left{
+		.DS-video-left{
 			padding-bottom: 30px;
 		}
 	}

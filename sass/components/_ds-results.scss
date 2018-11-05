@@ -1,0 +1,36 @@
+.DS-results{
+	padding-top: 55px;
+	.DS-head{
+		padding-bottom: 80px;
+	}
+	.DS-results-content{
+		padding-bottom: 90px;
+
+		h4{
+			font-size: 32px;
+			font-weight: 900;
+			line-height: 1.31;
+			padding: 0 50px 38px 50px;
+			text-align: center;
+		}
+		p{
+			background-color: #f9f9f9;
+			padding: 50px 50px 60px 50px;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+			font-size: 25px;
+			line-height: 1.68;
+			font-weight: 300;
+			color: #333132;
+
+			span{
+				color: #0091ea;
+				font-weight: 900;
+				font-size: 25px;
+			}
+		}
+	}
+
+	.section-img-banner{
+		height: 480px;
+	}
+}

@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    #Hero Banner
+\*------------------------------------*/
+
 .why-google-sprint{
 	padding-top: 100px;
 	.h2{
@@ -17,6 +21,7 @@
 			font-size: 32px;
   			font-weight: 900;
   			line-height: 1.31;
+  			color: #333132;
 		}
 		.why-GS-contain{
 			padding: 55px 50px 50px 50px;
@@ -28,9 +33,11 @@
 			h5, p{
 				font-size: 25px;
 				line-height: 1.68;
+				color: #333132;
 			}
 			h5{
 				font-weight: 900;
+				padding-bottom: 24px;
 			}
 		}
 	}
@@ -38,14 +45,17 @@
 	.section-img-banner {
 		height: 556px;
 	}
-}
 
-.section-img-banner{
-	overflow: hidden;
-	position: relative;
-
-	img{
-		position: absolute;
-		width: 100%;
+	@media (max-width: 991px){
+		.why-GS-left{
+			margin-bottom: 70px;
+		}
+		
+		.why-GS-content{
+			h4, .why-GS-contain{
+				padding: 40px;
+				min-height: auto;
+			}
+		}
 	}
 }

@@ -5,16 +5,47 @@
 		color: #333132;
 		max-width: 800px;
 		margin: 0 auto;
+		font-size: 20px;
+		padding-bottom: 75px;
 	}
 
 	.fortune-company-content{
 		
 		ul{
-			display: table;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
 			li{
-				display: table-cell;
+				width: 33.3%;
+				height: 90px;
+				line-height: 90px;
+				margin-bottom: 30px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
 			}
 		}	
+	}
 
+	@media(max-width: 767px){
+		.fortune-company-content{
+			
+			ul{
+				li{
+					width: 50%;
+				}
+			}
+		}
+	}
+	@media(max-width: 576px){
+		.fortune-company-content{
+			
+			ul{
+				li{
+					width: 100%;
+				}
+			}
+		}	
 	}
 }
