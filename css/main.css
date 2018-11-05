@@ -292,7 +292,8 @@ body, html {
     border: 1px solid #82968c;
     padding: 10px;
     margin-bottom: 18px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .google-sprint-wrapper .google-sprint-right .form-check-label input {
       position: absolute;
       opacity: 0; }
@@ -305,7 +306,7 @@ body, html {
       right: 0;
       top: 0;
       bottom: 0;
-      height: 100%;
+      height: 110%;
       width: 100%;
       z-index: -1;
       opacity: 0; }
@@ -459,18 +460,22 @@ body, html {
         line-height: 1.68; }
       .why-google-sprint .why-GS-content .why-GS-contain h5 {
         font-weight: 900; }
-  .why-google-sprint .section-img-banner img {
+  .why-google-sprint .section-img-banner {
     height: 556px; }
 
-.section-img-banner img {
-  height: 500px;
-  object-fit: cover;
-  width: 100%; }
+.section-img-banner {
+  overflow: hidden;
+  position: relative; }
+  .section-img-banner img {
+    position: absolute;
+    width: 100%; }
 
 .how-google-sprint {
   padding-top: 57px; }
   .how-google-sprint .h2 {
     padding-bottom: 19px; }
+  .how-google-sprint .section-img-banner {
+    height: 576px; }
   .how-google-sprint .how-google-sprint-head p {
     color: #333132;
     font-size: 25px;
@@ -518,12 +523,17 @@ body, html {
       line-height: 1.62;
       padding: 15px; }
     .how-google-sprint .how-gs-contents .how-gs-content p {
-      min-height: 145px;
-      padding: 50px 0;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
       font-size: 25px;
       color: #333132;
-      background-color: #fff; }
+      background-color: #fff;
+      display: table-cell;
+      height: 160px;
+      width: 100%;
+      vertical-align: middle; }
+    .how-google-sprint .how-gs-contents .how-gs-content .tag-wrap {
+      display: table;
+      width: 100%; }
     .how-google-sprint .how-gs-contents .how-gs-content .how-gs-tags {
       display: table;
       width: 100%; }

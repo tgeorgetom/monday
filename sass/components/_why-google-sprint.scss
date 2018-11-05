@@ -35,15 +35,17 @@
 		}
 	}
 
-	.section-img-banner img{
+	.section-img-banner {
 		height: 556px;
 	}
 }
 
 .section-img-banner{
+	overflow: hidden;
+	position: relative;
+
 	img{
-		height: 500px;
-		object-fit: cover;
+		position: absolute;
 		width: 100%;
 	}
 }

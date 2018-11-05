@@ -3,6 +3,11 @@
 	.h2{
 		padding-bottom: 19px;
 	}
+
+	.section-img-banner{
+		height: 576px;
+	}
+
 	.how-google-sprint-head p{
 		color: #333132;
 		font-size: 25px;
@@ -60,16 +65,23 @@
 				padding: 15px;
 			}
 			p{
-				min-height: 145px;
-				padding: 50px 0;
 				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-				font-size: 25px;
-				color: #333132;
-				background-color: #fff;
+			    font-size: 25px;
+			    color: #333132;
+			    background-color: #fff;
+			    display: table-cell;
+			    height: 160px;
+			    width: 100%;
+			    vertical-align: middle;
+			}
+			.tag-wrap {
+			    display: table;
+			    width: 100%;
 			}
 			.how-gs-tags{
 				display: table;
 				width: 100%;
+
 				ul{
 					vertical-align: top;
 					display: table-cell;
