@@ -75,7 +75,7 @@ a {
   text-align: center;
   color: #333132;
   margin: 0; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .h2 {
       font-size: 38px; } }
 
@@ -88,6 +88,9 @@ a {
   position: relative; }
   .section-img-banner img {
     position: absolute; }
+  @media (max-width: 767px) {
+    .section-img-banner {
+      height: 350px !important; } }
 
 /*------------------------------------*\
     #BODY
@@ -162,6 +165,11 @@ body, html {
         font-size: 55px; }
       .hero-banner-content p {
         font-size: 20px; } }
+  @media (max-width: 767px) {
+    .hero-banner-content h1 {
+      font-size: 45px;
+      line-height: normal;
+      padding-bottom: 10px; } }
 
 /*------------------------------------*\
     #Navbar
@@ -246,6 +254,8 @@ body, html {
     border: none;
     height: auto;
     resize: none; }
+  .get-in-touch .help-you-wrapper textarea {
+    height: 190px; }
   .get-in-touch .help-you-wrapper .form-submit-wrap {
     text-align: right; }
     .get-in-touch .help-you-wrapper .form-submit-wrap button, .get-in-touch .help-you-wrapper .form-submit-wrap a {
@@ -593,6 +603,13 @@ body, html {
       width: 100%;
       margin: 0 10px 30px 10px;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  @media (max-width: 767px) {
+    .tag-contents:after {
+      content: none; } }
+  @media (max-width: 576px) {
+    .tag-contents .tag-content .tags-in li {
+      margin: 0 0 30px 0;
+      max-width: none; } }
 
 .DS-video-wrapper {
   padding-top: 39px; }
@@ -601,8 +618,9 @@ body, html {
   .DS-video-wrapper .DS-video-content {
     background-color: #f9f9f9;
     padding: 62px 0; }
-  .DS-video-wrapper .DS-video-left img, .DS-video-wrapper .DS-video-left video {
-    width: 100%; }
+  .DS-video-wrapper .DS-video-left img, .DS-video-wrapper .DS-video-left video, .DS-video-wrapper .DS-video-left iframe {
+    width: 100%;
+    height: 396px; }
   .DS-video-wrapper .DS-video-right img {
     height: 76px;
     width: 76px;
@@ -645,6 +663,47 @@ body, html {
     .wanna-DS-wrapper .wanna-DS-head p {
       font-size: 25px;
       font-weight: 300; }
+  .wanna-DS-wrapper .wanna-DS-table {
+    padding: 74px 0 0px; }
+    .wanna-DS-wrapper .wanna-DS-table h3 {
+      font-size: 25px;
+      font-weight: 900;
+      line-height: 1.4;
+      position: relative; }
+    .wanna-DS-wrapper .wanna-DS-table h4, .wanna-DS-wrapper .wanna-DS-table p {
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.88; }
+    .wanna-DS-wrapper .wanna-DS-table p {
+      font-weight: 300; }
+    .wanna-DS-wrapper .wanna-DS-table table {
+      box-shadow: 0 2px 9px 3px rgba(0, 0, 0, 0.04); }
+    .wanna-DS-wrapper .wanna-DS-table tr {
+      border-left: 4px solid #7ed321; }
+    .wanna-DS-wrapper .wanna-DS-table tr#headingThree {
+      background-color: #f9f9f9;
+      border-left: 4px solid #ea5752; }
+    .wanna-DS-wrapper .wanna-DS-table td, .wanna-DS-wrapper .wanna-DS-table th {
+      vertical-align: middle;
+      padding: 30px 40px; }
+    .wanna-DS-wrapper .wanna-DS-table th {
+      width: 280px; }
+  @media (max-width: 767px) {
+    .wanna-DS-wrapper .wanna-DS-table h3:after {
+      content: "\f0d7";
+      position: absolute;
+      right: -20px;
+      top: 45%;
+      font-size: 20px;
+      color: #c1c5ca;
+      font-family: fontawesome;
+      margin-top: -10px; }
+    .wanna-DS-wrapper .wanna-DS-table th {
+      width: auto; }
+    .wanna-DS-wrapper .wanna-DS-table .collapse-anchor {
+      cursor: pointer; }
+    .wanna-DS-wrapper td, .wanna-DS-wrapper th {
+      padding: 20px; } }
 
 .cases-panel-wrapper .cases-panel {
   padding: 5px 0 5px 33px;
@@ -770,6 +829,9 @@ body, html {
   padding-bottom: 10px; }
 .we-tc-wrapper .section-img-banner {
   height: 556px; }
+@media (max-width: 767px) {
+  .we-tc-wrapper .cases-panel-wrapper .cases-panel li {
+    padding-right: 30px; } }
 
 footer {
   background-color: #c9dde5;
@@ -802,7 +864,7 @@ footer {
       display: table;
       margin: 0 auto; }
     footer .footer-logo {
-      margin: 30px auto; }
+      margin: 20px auto 40px; }
     footer .footer-social {
       text-align: center; }
       footer .footer-social li {

@@ -49,4 +49,9 @@
 	.section-img-banner{
 		height: 556px;
 	}
+	@media (max-width: 767px){
+		.cases-panel-wrapper .cases-panel li{
+			padding-right: 30px;
+		}
+	}
 }

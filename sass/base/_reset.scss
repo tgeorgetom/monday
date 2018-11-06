@@ -68,7 +68,7 @@ a{
 	color: $text-1;
 	margin: 0;
 
-	@media (max-width: 768px){
+	@media (max-width: 767px){
 		font-size: 38px;
 	}
 }
@@ -85,6 +85,9 @@ a{
 
 	img{
 		position: absolute;
+	}
+	@media (max-width: 767px){
+		height: 350px !important;
 	}
 }
 
