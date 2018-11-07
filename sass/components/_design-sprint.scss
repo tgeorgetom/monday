@@ -74,7 +74,6 @@
 			input:checked ~ span, input:checked ~ span:after{
 				opacity: 1;
 				color: #fff;
-
 			}
 		}
 		.email-wrapper{
@@ -93,8 +92,30 @@
 					background: #fff;
 				}
 			}
-			#email-error{
-				display: none !important;
+			input.error{
+				border-color: #ea5752;
+			}
+			label#email1-error {
+				position: absolute;
+				right: 0;
+				background: #fff;
+				top: 1px;
+				font-size: 0;
+				bottom: 1px;
+				right: 1px;
+				width: 28px;
+				line-height: 47px;
+				z-index: 1;
+			}
+
+			label#email1-error:after {
+				content: "\f1fa";
+				font-family: fontawesome;
+				font-size: 22px;
+				color: #c9dde5;
+			}
+			label#email1-error.valid:after{
+				color: #7ed321;	
 			}
 
 			&.success{
@@ -117,13 +138,14 @@
 			background-color: #fbb13c;
 			color: #fff;
 			font-size: 14px;
-			font-weight: 700;
+			font-weight: 900;
 			max-width: 231px;
 			width: 100%;
 			display: block;
 			border-radius: 2px;
 			padding: 15px 0;
 			border: none;
+			text-transform: uppercase;
 		}
 	}
 

@@ -19,6 +19,16 @@
 		word-break: break-word;
 		max-width: 876px;
 		padding-bottom: 21px;
+		span{
+			width: auto !important;
+		}
+		b{
+			font-size: 80px;
+			font-weight: 700;
+			line-height: 1.63;
+			color: $color-white;
+			word-break: break-word;
+		}
 	}
 	p{
 		font-size: 25px;
@@ -62,6 +72,9 @@
 
 		h1{
 			font-size: 55px;
+			b{
+				font-size: 55px;	
+			}
 		}
 		p{
 			font-size: 20px;
@@ -73,6 +86,10 @@
 			font-size: 45px;
 			line-height: normal;
 			padding-bottom: 10px;
+			b{
+				font-size: 45px;
+				line-height: normal;
+			}
 		}
 	}
 }

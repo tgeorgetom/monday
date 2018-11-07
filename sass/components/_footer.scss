@@ -19,9 +19,12 @@ footer{
 		a, p{
 			color: #8e999c;
 			padding-left: 35px;
-			padding-bottom: 20px;
+			padding-bottom: 30px;
 			display: block;
-		}	
+		}
+		p{
+			padding-bottom: 0px;
+		}
 	}
 
 	.footer-logo {

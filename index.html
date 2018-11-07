@@ -47,9 +47,20 @@
     </nav>
   </header>
 
-  <div class="hero-banner-content" id="hero-banner-content">
+  <div class="hero-banner-content " id="hero-banner-content">
     <div class="container">
-      <h1>Google Design Sprint für Dienstleistungen</h1>
+      <h1 class="cd-headline slide">Google Design Sprint für 
+        <span class="cd-words-wrapper">
+          <b class="is-visible">Produkte</b>
+          <b>Dienstleistungen</b>
+          <b>Services</b>
+          <b>Apps</b>
+          <b>Web</b>
+          <b>Hardware</b>
+          <b>Software</b>
+          <b>Innovation</b>
+        </span>
+      </h1>
       <p>Komprimiere Monate der Arbeit in nur eine Woche.</p>
     </div>
     <a class="hero-down-arrow" href="#google-sprint"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -72,7 +83,7 @@
       </div>
       <div class="col-md-5">
         <div class="google-sprint-right">
-          <form id="myform" novalidate>
+          <form id="topForm" novalidate>
             <div class="form-group">
               <label class="form-label">Wofür benötigst Du Unterstützung?</label>
               <div class="row">
@@ -105,7 +116,7 @@
             <div class="form-group">
               <label class="form-label" for="email">Deine E-Mail Adresse</label>
               <div class="email-wrapper">
-                <input type="email" class="form-control" id="email" placeholder="E- Mail Adresse" required>
+                <input type="email" class="form-control" id="email1" placeholder="E- Mail Adresse" required>
                 <i class="fa fa-at" aria-hidden="true"></i>
               </div>
             </div>
@@ -430,27 +441,27 @@
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="fname" placeholder="Vorname*" required>
+                <input type="text" class="form-control" id="fname" name="firstname" placeholder="Vorname*" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="lname" placeholder="Name*" required>
+                <input type="text" class="form-control" id="lname" name="lastname" placeholder="Name*" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="E-Mail*" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail*" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="telephone" placeholder="Telephone*" required>
+                <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone*" required>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Wie können wir deiner Firma helfen, Ihr Ziel zu erreichen?*" required></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Wie können wir deiner Firma helfen, Ihr Ziel zu erreichen?*" required></textarea>
               </div>
             </div>
             <div class="col-md-12">
@@ -480,7 +491,7 @@
           <ul>
             <li>
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <a href="">0176.8900.2563</a>
+              <a href="tel:017689002563">0176.8900.2563</a>
             </li>
             <li>
               <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -515,6 +526,7 @@
 <script type="text/javascript" src="js/Parallax.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>

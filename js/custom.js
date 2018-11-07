@@ -61,13 +61,16 @@ $(window).bind('scroll', function () {
   }
 });
 
+$('#email1').keypress(function(){
+  console.log("deed");
+  $(this).parents(".email-wrapper").removeClass('success');
+});
 
-
-$("#myform").validate({
+$("#topForm").validate({
   success: function(label) {
       label
         .text('OK!').addClass('valid')
-        .parent('.email-wrapper').addClass('success');
+        .siblings('.fa-at').addClass('success');
     },
   submitHandler: function(form) {
     $(form).submit();
@@ -77,6 +80,26 @@ $("#myform").validate({
 
 
 $("#sayHello").validate({
+  rules: {
+      firstname: "required",
+      lastname: "required",
+      email: "required email",
+      telephone: {
+            required: true,
+            minlength: 10,
+            maxlength: 10
+        }
+    },
+    messages: {
+      firstname: "Enter your firstname",
+      lastname: "Enter your lastname",
+      email: {
+        required: "Enter your Email",
+        email: "Please enter a valid email address.",
+      },
+      telephone: "Enter valid phone number",
+      message: "Enter your message"
+    },
   submitHandler: function(form) {
     $(form).submit();
   }

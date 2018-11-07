@@ -206,11 +206,11 @@
         <ul>
           <li>
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            <a href="">hallo@newmonday-sprint.de</a>
+            <a href="mailto:hallo@newmonday-sprint.de">hallo@newmonday-sprint.de</a>
           </li>
           <li>
             <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="">0176.8900.2563</a>
+            <a href="tel:017689002563">0176.8900.2563</a>
           </li>
         </ul>
       </div>
@@ -220,36 +220,36 @@
       <div class="help-you-wrapper">
         <h2 class="h2">Wir können wir dir helfen?</h2>
         
-        <form>
+        <form id="sayHello" novalidate>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="fname" placeholder="Vorname*">
+                <input type="text" class="form-control" id="fname" name="firstname" placeholder="Vorname*" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="lname" placeholder="Name*">
+                <input type="text" class="form-control" id="lname" name="lastname" placeholder="Name*" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="E-Mail*">
+                <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail*" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="telephone" placeholder="Telephone*">
+                <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone*" required>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Wie können wir deiner Firma helfen, Ihr Ziel zu erreichen?*"></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Wie können wir deiner Firma helfen, Ihr Ziel zu erreichen?*" required></textarea>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-submit-wrap">
-                <a href="form-submit">email senden</a>
+                <button href="form-submit">email senden</button>
               </div>
             </div>
           </div>  
@@ -274,11 +274,11 @@
           <ul>
             <li>
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <a href="">0176.8900.2563</a>
+              <a href="tel:017689002563">0176.8900.2563</a>
             </li>
             <li>
               <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <p>Our Berlin Headquarter</p>
+              <a target="_blank" href="https://www.google.com/maps/place/Regus+-+Berlin,+Leuchtenfabrik/@52.4619076,13.5113553,17z/data=!3m1!4b1!4m5!3m4!1s0x47a848b71b5aaaab:0x33acf0cb00d3d5f9!8m2!3d52.4619044!4d13.513544">Our Berlin Headquarter</a>
             </li>
           </ul>
         </div>
@@ -306,8 +306,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/Parallax.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+
 
 </body>
 </html>

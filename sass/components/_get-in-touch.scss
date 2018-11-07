@@ -6,10 +6,10 @@
 	padding: 130px 0;
 
 	.hello-wrapper{
-		padding-bottom: 60px;
+		padding-bottom: 96px;
 
 		.h2{
-			padding-bottom: 25px;
+			padding-bottom: 30px;
 		}
 		.hello-wrapper-content{
 			max-width: 1000px;
@@ -28,8 +28,10 @@
 					font-weight: 500;
 				}
 				i{
-					font-size: 24px;
+					font-size: 30px;
 					opacity: 0.6;
+					position: relative;
+					top: 2px;
 				}
 			}
 		}
@@ -40,7 +42,17 @@
 			padding-bottom: 40px;
 		}
 		.form-group{
-			margin-bottom: 32px;
+			padding-bottom: 32px;
+			position: relative;
+			margin-bottom: 0;
+			
+			label.error{
+				position: absolute;
+			    bottom: 10px;
+			    font-size: 13px;
+			    color: red;
+			}
+			
 		}
 		input, textarea{
 			padding: 10px 18px;
@@ -71,6 +83,7 @@
 				float: right;
 				border: none;
 				margin-top: 20px;
+				box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
 			}
 		}
 	}
