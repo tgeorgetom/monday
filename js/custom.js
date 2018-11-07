@@ -27,18 +27,15 @@ parallax.init();
 
 
 $(document).ready(function(){
-  $(".hero-down-arrow").on('click', function(event) {
+  $(".hero-down-arrow, .nav-link").on('click', function(event) {
 
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
 
-console.log($(hash).offset().top + 60);
-
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 80
-      }, 1000,  function(){
-   
+          scrollTop: $(hash).offset().top - 94
+        }, 1000,  function(){
         window.location.hash = hash;
       });
     }

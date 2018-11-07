@@ -20,9 +20,9 @@
 		color: #1b9aaa;
 		display: block;
 		font-size: 25px;
-		font-weight: 900;
+		font-weight: 700;
 		line-height: 1.68;
-		margin-bottom: 76px;
+		margin: 67px auto 76px;
 	}
 }
 
@@ -50,7 +50,7 @@
 		button{
 			background-color: #1b9aaa;
 			font-size: 14px;
-			font-weight: 900;
+			font-weight: 700;
 			max-width: 231px;
 			padding: 15px;
 			margin-bottom: 32px;
@@ -67,7 +67,7 @@
 			background-color: #333132;
 			color: #fff;
 			font-size: 26px;
-			font-weight: 900;
+			font-weight: 700;
 			line-height: 1.62;
 			padding: 15px;
 			border-radius: 2px 2px 0 0;
@@ -77,10 +77,13 @@
 		    color: #333132;
 		    background-color: #fff;
 		    display: table-cell;
-		    height: 160px;
+		    height: 250px;
 		    width: 100%;
 		    vertical-align: middle;
 		    border-radius: 0 0 2px 2px;
+		    padding: 15px;
+		    font-weight: 700;
+		    word-break: break-word;
 		}
 		.tag-wrap {
 		    display: table;
@@ -99,15 +102,20 @@
 				display: inline-block;
 				vertical-align: top;
 				width: 100%;
-				margin: 0 10px 30px 10px;
-				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+				margin: 0 10px 0px 10px;
+				box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
 			}
 		}
 	}
 	@media (max-width: 767px){
 		&:after {
 			content: none;
-		}	
+		}
+	}
+	@media (max-width: 992px){
+		.tag-content .tags-in li{
+			margin: 0 10px 30px 10px;
+		}
 	}
 	@media (max-width: 576px){
 		.tag-content .tags-in li{

@@ -4,13 +4,14 @@
 
 
 .google-sprint-wrapper{
-	padding: 95px 0;
+	padding: 95px 0 135px;
 
 	.google-sprint-left{
 		.h2{
 			color: #fbb13c;
 			text-align: left;
 			line-height: 1.41;
+			font-weight: 700;
 		}
 		.h2.desc{
 			color: #333132;
@@ -116,7 +117,7 @@
 			background-color: #fbb13c;
 			color: #fff;
 			font-size: 14px;
-			font-weight: 900;
+			font-weight: 700;
 			max-width: 231px;
 			width: 100%;
 			display: block;

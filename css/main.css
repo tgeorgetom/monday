@@ -70,7 +70,7 @@ a {
  */
 .h2 {
   font-size: 44px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.41;
   text-align: center;
   color: #333132;
@@ -80,12 +80,17 @@ a {
       font-size: 38px; } }
 
 .section-container {
-  max-width: 966px;
+  max-width: 1066px;
   margin: 0 auto; }
+
+p {
+  font-weight: 500; }
 
 .section-img-banner {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  max-width: 1375px;
+  margin: 0 auto; }
   .section-img-banner img {
     position: absolute; }
   @media (max-width: 767px) {
@@ -117,20 +122,24 @@ body, html {
     #Hero Banner
 \*------------------------------------*/
 .hero-banner-content {
-  padding: 140px 0 60px;
+  padding: 60px 0 60px;
   background-color: #82968c;
   height: 572px;
-  position: relative; }
+  position: relative;
+  margin-top: 80px;
+  margin: 90px auto 0;
+  max-width: 1375px; }
   .hero-banner-content h1 {
     font-size: 80px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.63;
     color: #fff;
     word-break: break-word;
-    max-width: 876px; }
+    max-width: 876px;
+    padding-bottom: 21px; }
   .hero-banner-content p {
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.76;
     color: #fff; }
   .hero-banner-content .hero-down-arrow {
@@ -179,7 +188,8 @@ body, html {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  padding: 15px; }
   .navbar.fixed-navbar {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
   .navbar .header-logo {
@@ -190,6 +200,9 @@ body, html {
   @media (max-width: 767px) {
     .navbar .nav-item {
       padding: 0; } }
+  @media (min-width: 767px) {
+    .navbar .navbar-nav {
+      margin-right: -15px; } }
 
 .navbar-light .navbar-nav .nav-link {
   color: #333132; }
@@ -229,17 +242,18 @@ body, html {
     .get-in-touch .hello-wrapper .h2 {
       padding-bottom: 25px; }
     .get-in-touch .hello-wrapper .hello-wrapper-content {
-      max-width: 800px;
+      max-width: 1000px;
       text-align: center;
       margin: 0 auto; }
       .get-in-touch .hello-wrapper .hello-wrapper-content li {
         display: inline-block;
-        padding: 0 20px; }
+        padding: 0 60px; }
         .get-in-touch .hello-wrapper .hello-wrapper-content li a {
           font-size: 25px;
           padding-left: 20px;
           color: #333132;
-          opacity: 0.6; }
+          opacity: 0.6;
+          font-weight: 500; }
         .get-in-touch .hello-wrapper .hello-wrapper-content li i {
           font-size: 24px;
           opacity: 0.6; }
@@ -253,7 +267,8 @@ body, html {
     border-radius: 0;
     border: none;
     height: auto;
-    resize: none; }
+    resize: none;
+    font-size: 14px; }
   .get-in-touch .help-you-wrapper textarea {
     height: 190px; }
   .get-in-touch .help-you-wrapper .form-submit-wrap {
@@ -265,12 +280,13 @@ body, html {
       text-align: center;
       text-transform: uppercase;
       font-size: 14px;
-      font-weight: 900;
+      font-weight: 700;
       color: #fff;
       width: 100%;
       display: block;
       float: right;
-      border: none; }
+      border: none;
+      margin-top: 20px; }
   @media (max-width: 767px) {
     .get-in-touch {
       padding: 90px 0; } }
@@ -279,11 +295,12 @@ body, html {
     #Google Sprint 
 \*------------------------------------*/
 .google-sprint-wrapper {
-  padding: 95px 0; }
+  padding: 95px 0 135px; }
   .google-sprint-wrapper .google-sprint-left .h2 {
     color: #fbb13c;
     text-align: left;
-    line-height: 1.41; }
+    line-height: 1.41;
+    font-weight: 700; }
   .google-sprint-wrapper .google-sprint-left .h2.desc {
     color: #333132;
     font-weight: 400; }
@@ -363,7 +380,7 @@ body, html {
     background-color: #fbb13c;
     color: #fff;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
     max-width: 231px;
     width: 100%;
     display: block;
@@ -382,7 +399,7 @@ body, html {
   text-align: center; }
   .fortune-company-wrapper .fortune-company-desc {
     color: #333132;
-    max-width: 800px;
+    max-width: 920px;
     margin: 0 auto;
     font-size: 20px;
     padding-bottom: 75px; }
@@ -395,14 +412,14 @@ body, html {
       height: 90px;
       line-height: 90px;
       margin-bottom: 30px; }
-      .fortune-company-wrapper .fortune-company-content ul li:last-child {
-        margin-bottom: 0; }
   @media (max-width: 767px) {
     .fortune-company-wrapper .fortune-company-content ul li {
       width: 50%; } }
   @media (max-width: 576px) {
     .fortune-company-wrapper .fortune-company-content ul li {
-      width: 100%; } }
+      width: 100%; }
+      .fortune-company-wrapper .fortune-company-content ul li:last-child {
+        margin-bottom: 0; } }
 
 .our-bg-wrapper {
   padding: 50px 0 0; }
@@ -410,7 +427,7 @@ body, html {
     padding-bottom: 63px; }
   .our-bg-wrapper .our-bg-head {
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.68;
     color: #333333;
     padding-bottom: 22px; }
@@ -431,7 +448,8 @@ body, html {
       height: 280px;
       max-width: 100%;
       object-fit: cover;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 100%; }
     .our-bg-wrapper .our-bg-profiles .our-bg-profile-content {
       padding-top: 34px;
       display: table;
@@ -465,7 +483,10 @@ body, html {
   .about-us-wrapper .our-vision {
     padding-bottom: 107px; }
   .about-us-wrapper .about-us-section h5 {
-    padding-bottom: 44px; }
+    padding-bottom: 44px;
+    font-weight: 700; }
+  .about-us-wrapper .about-us-section p {
+    font-weight: 300; }
   .about-us-wrapper .about-us-section h5, .about-us-wrapper .about-us-section p {
     font-size: 25px;
     line-height: 1.68;
@@ -483,9 +504,10 @@ body, html {
     #Hero Banner
 \*------------------------------------*/
 .why-google-sprint {
-  padding-top: 100px; }
+  padding-top: 70px; }
   .why-google-sprint .h2 {
-    padding-bottom: 76px; }
+    padding-bottom: 76px;
+    font-weight: 900; }
   .why-google-sprint .why-GS-left {
     border-top: 12px solid #f9cb53; }
   .why-google-sprint .why-GS-right {
@@ -495,7 +517,7 @@ body, html {
     .why-google-sprint .why-GS-content h4 {
       padding: 55px 50px;
       font-size: 32px;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.31;
       color: #333132; }
     .why-google-sprint .why-GS-content .why-GS-contain {
@@ -503,13 +525,14 @@ body, html {
       background-color: #f9f9f9;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
       height: 100%;
-      min-height: 420px; }
+      min-height: 420px;
+      border-radius: 2px; }
       .why-google-sprint .why-GS-content .why-GS-contain h5, .why-google-sprint .why-GS-content .why-GS-contain p {
         font-size: 25px;
         line-height: 1.68;
         color: #333132; }
       .why-google-sprint .why-GS-content .why-GS-contain h5 {
-        font-weight: 900;
+        font-weight: 700;
         padding-bottom: 24px; }
   .why-google-sprint .section-img-banner {
     height: 556px; }
@@ -536,9 +559,9 @@ body, html {
     color: #1b9aaa;
     display: block;
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.68;
-    margin-bottom: 76px; }
+    margin: 67px auto 76px; }
 
 .tag-contents {
   text-align: center;
@@ -559,7 +582,7 @@ body, html {
   .tag-contents .tag-content button {
     background-color: #1b9aaa;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
     max-width: 231px;
     padding: 15px;
     margin-bottom: 32px;
@@ -574,7 +597,7 @@ body, html {
     background-color: #333132;
     color: #fff;
     font-size: 26px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.62;
     padding: 15px;
     border-radius: 2px 2px 0 0; }
@@ -583,10 +606,13 @@ body, html {
     color: #333132;
     background-color: #fff;
     display: table-cell;
-    height: 160px;
+    height: 250px;
     width: 100%;
     vertical-align: middle;
-    border-radius: 0 0 2px 2px; }
+    border-radius: 0 0 2px 2px;
+    padding: 15px;
+    font-weight: 700;
+    word-break: break-word; }
   .tag-contents .tag-content .tag-wrap {
     display: table;
     width: 100%; }
@@ -601,11 +627,14 @@ body, html {
       display: inline-block;
       vertical-align: top;
       width: 100%;
-      margin: 0 10px 30px 10px;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+      margin: 0 10px 0px 10px;
+      box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1); }
   @media (max-width: 767px) {
     .tag-contents:after {
       content: none; } }
+  @media (max-width: 992px) {
+    .tag-contents .tag-content .tags-in li {
+      margin: 0 10px 30px 10px; } }
   @media (max-width: 576px) {
     .tag-contents .tag-content .tags-in li {
       margin: 0 0 30px 0;
@@ -630,7 +659,7 @@ body, html {
     border-radius: 50px; }
   .DS-video-wrapper .DS-video-right h4 {
     font-size: 25px;
-    font-weight: 900; }
+    font-weight: 700; }
   .DS-video-wrapper .DS-video-right p {
     font-size: 17px;
     font-weight: 500;
@@ -658,7 +687,7 @@ body, html {
       font-size: 25px;
       line-height: 1.68; }
     .wanna-DS-wrapper .wanna-DS-head h4 {
-      font-weight: 900;
+      font-weight: 700;
       padding-bottom: 29px; }
     .wanna-DS-wrapper .wanna-DS-head p {
       font-size: 25px;
@@ -667,12 +696,12 @@ body, html {
     padding: 74px 0 0px; }
     .wanna-DS-wrapper .wanna-DS-table h3 {
       font-size: 25px;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.4;
       position: relative; }
     .wanna-DS-wrapper .wanna-DS-table h4, .wanna-DS-wrapper .wanna-DS-table p {
       font-size: 17px;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.88; }
     .wanna-DS-wrapper .wanna-DS-table p {
       font-weight: 300; }
@@ -713,7 +742,7 @@ body, html {
     margin-bottom: 0; }
   .cases-panel-wrapper .cases-panel h4 {
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.68;
     color: #333132;
     padding-bottom: 31px; }
@@ -773,7 +802,7 @@ body, html {
     padding-bottom: 90px; }
     .DS-results .DS-results-content h4 {
       font-size: 32px;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.31;
       padding: 0 50px 38px 50px;
       text-align: center; }
@@ -787,7 +816,7 @@ body, html {
       color: #333132; }
       .DS-results .DS-results-content p span {
         color: #0091ea;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 25px; }
   .DS-results .section-img-banner {
     height: 480px; }
@@ -823,7 +852,7 @@ body, html {
   padding: 67px 0 55px; }
 .we-tc-wrapper h5 {
   font-size: 25px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.68;
   text-align: center;
   padding-bottom: 10px; }
@@ -835,7 +864,9 @@ body, html {
 
 footer {
   background-color: #c9dde5;
-  padding: 43px 0 34px; }
+  padding: 43px 0 34px;
+  max-width: 1375px;
+  margin: 0 auto; }
   footer .footer-contact {
     color: #8e999c; }
     footer .footer-contact li {
@@ -894,7 +925,7 @@ footer {
     vertical-align: middle; }
   .talk-to-us .talk-to-us-content button {
     font-size: 17px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.94;
     color: #48b8d0;
     padding: 18px;
@@ -919,7 +950,7 @@ footer {
     padding: 80px 0 95px; }
     .cases-hero-banner .cases-banner-content h1 {
       font-size: 70px;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.43;
       color: #fff; }
 
@@ -931,7 +962,7 @@ footer {
     .testimony .testimony-content .testimony-desc {
       text-align: center;
       font-size: 25px;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.68; }
     .testimony .testimony-content .media {
       max-width: 170px;
@@ -948,7 +979,7 @@ footer {
         line-height: 2;
         text-align: left; }
       .testimony .testimony-content .media h5 {
-        font-weight: 900;
+        font-weight: 700;
         color: #333132; }
       .testimony .testimony-content .media p {
         color: #82968c; }

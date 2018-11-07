@@ -3,22 +3,26 @@
 \*------------------------------------*/
 
 .hero-banner-content{
-	padding: 140px 0 60px;
+	padding: 60px 0 60px;
 	background-color: #82968c;
 	height: 572px;
 	position: relative;
+	margin-top: 80px;
+	margin: 90px auto 0;
+    max-width: 1375px;
 
 	h1{
 		font-size: 80px;
-		font-weight: 900;
+		font-weight: 700;
 		line-height: 1.63;
 		color: $color-white;
 		word-break: break-word;
 		max-width: 876px;
+		padding-bottom: 21px;
 	}
 	p{
 		font-size: 25px;
-		font-weight: 900;
+		font-weight: 700;
 		line-height: 1.76;
 		color: $color-white;
 	}

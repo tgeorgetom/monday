@@ -62,7 +62,7 @@ a{
 
 .h2{
 	font-size: 44px;
-	font-weight: 900;
+	font-weight: 700;
 	line-height: 1.41;
 	text-align: center;
 	color: $text-1;
@@ -74,14 +74,19 @@ a{
 }
 
 .section-container{
-	max-width: 966px;
+	max-width: 1066px;
 	margin: 0 auto;
 }
 
+p{
+	font-weight: 500;
+}
 
 .section-img-banner{
 	overflow: hidden;
 	position: relative;
+	max-width: 1375px;
+	margin: 0 auto;
 
 	img{
 		position: absolute;

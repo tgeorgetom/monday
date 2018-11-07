@@ -3,9 +3,10 @@
 \*------------------------------------*/
 
 .why-google-sprint{
-	padding-top: 100px;
+	padding-top: 70px;
 	.h2{
 		padding-bottom: 76px;
+		font-weight: 900;
 	}
 	.why-GS-left{
 		border-top: 12px solid #f9cb53;
@@ -19,7 +20,7 @@
 		h4{
 			padding: 55px 50px;
 			font-size: 32px;
-  			font-weight: 900;
+  			font-weight: 700;
   			line-height: 1.31;
   			color: #333132;
 		}
@@ -29,6 +30,7 @@
 			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 			height: 100%;
 		    min-height: 420px;
+		    border-radius: 2px;
 
 			h5, p{
 				font-size: 25px;
@@ -36,7 +38,7 @@
 				color: #333132;
 			}
 			h5{
-				font-weight: 900;
+				font-weight: 700;
 				padding-bottom: 24px;
 			}
 		}
