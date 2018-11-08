@@ -265,7 +265,7 @@ body, html {
   .get-in-touch .hello-wrapper {
     padding-bottom: 96px; }
     .get-in-touch .hello-wrapper .h2 {
-      padding-bottom: 30px; }
+      padding-bottom: 50px; }
     .get-in-touch .hello-wrapper .hello-wrapper-content {
       max-width: 1000px;
       text-align: center;
@@ -325,8 +325,12 @@ body, html {
   @media (max-width: 767px) {
     .get-in-touch {
       padding: 90px 0; }
-      .get-in-touch .hello-wrapper .hello-wrapper-content li {
-        padding: 20px 0 0 0; }
+      .get-in-touch .hello-wrapper {
+        padding-bottom: 70px; }
+        .get-in-touch .hello-wrapper .h2 {
+          padding-bottom: 30px; }
+        .get-in-touch .hello-wrapper .hello-wrapper-content li {
+          padding: 20px 0 0 0; }
       .get-in-touch .help-you-wrapper .form-submit-wrap button {
         float: none;
         margin: 0 auto; } }
@@ -405,7 +409,9 @@ body, html {
       border-radius: 0;
       border: 1px solid #82968c;
       padding: 10px 50px 10px 30px;
-      height: auto; }
+      height: auto;
+      border-radius: 2px;
+      color: #333132; }
       .google-sprint-wrapper .google-sprint-right .email-wrapper input:hover {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
       .google-sprint-wrapper .google-sprint-right .email-wrapper input.valid {
@@ -601,7 +607,7 @@ body, html {
       padding: 55px 50px 50px 50px;
       background-color: #f9f9f9;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-      height: 100%;
+      height: auto;
       min-height: 420px;
       border-radius: 2px; }
       .why-google-sprint .why-GS-content .why-GS-contain h5, .why-google-sprint .why-GS-content .why-GS-contain p {
@@ -745,7 +751,9 @@ body, html {
     line-height: 2; }
   @media (max-width: 767px) {
     .DS-video-wrapper .DS-video-left {
-      padding-bottom: 30px; } }
+      padding-bottom: 30px; }
+    .DS-video-wrapper .DS-video-right {
+      text-align: center; } }
 
 .cases-container {
   max-width: 1068px;
@@ -990,7 +998,7 @@ footer {
     footer .footer-social {
       text-align: center; }
       footer .footer-social li {
-        padding: 0 20px; } }
+        padding: 0 15px; } }
 
 .cd-title {
   position: relative;

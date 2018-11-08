@@ -9,7 +9,7 @@
 		padding-bottom: 96px;
 
 		.h2{
-			padding-bottom: 30px;
+			padding-bottom: 50px;
 		}
 		.hello-wrapper-content{
 			max-width: 1000px;
@@ -90,9 +90,18 @@
 
 	@media (max-width: 767px){
 		padding: 90px 0;
-		.hello-wrapper .hello-wrapper-content li{
-			padding: 20px 0 0 0 ;
+		.hello-wrapper{
+			padding-bottom: 70px;	
+
+			.h2{
+				padding-bottom: 30px;
+			}
+
+			.hello-wrapper-content li{
+				padding: 20px 0 0 0 ;
+			}
 		}
+		
 		.help-you-wrapper .form-submit-wrap button{
 			float: none;
 			margin: 0 auto;
