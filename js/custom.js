@@ -75,6 +75,17 @@ $('.email-wrapper input').on('keyup', function(e) {
 });
 
 
+$("#topForm").validate({
+  rules: {
+      email: "required email",
+  },
+
+  submitHandler: function(form) {
+    $(form).submit();
+  }
+  
+ });
+
 $("#sayHello").validate({
   rules: {
       firstname: "required",

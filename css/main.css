@@ -476,7 +476,8 @@ body, html {
       right: 1px;
       width: 28px;
       line-height: 47px;
-      z-index: 1; }
+      z-index: 1;
+      display: none !important; }
     .google-sprint-wrapper .google-sprint-right .email-wrapper label#email1-error:after {
       content: "\f1fa";
       font-family: fontawesome;
@@ -512,6 +513,31 @@ body, html {
     text-transform: uppercase;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer; }
+    .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success {
+      width: 100%;
+      z-index: 1;
+      background-color: #92cc4e;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 2px;
+      font-size: 0;
+      height: 51px;
+      position: relative; }
+      .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success:after, .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success:before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        height: 4px; }
+      .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success:before {
+        width: 30px;
+        transform: rotate(-44deg);
+        left: 46%;
+        top: 22px; }
+      .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success:after {
+        width: 17px;
+        transform: rotate(45deg);
+        left: 42%;
+        top: 26px; }
   @media (max-width: 767px) {
     .google-sprint-wrapper {
       padding: 50px 0; }

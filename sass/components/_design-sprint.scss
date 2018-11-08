@@ -189,6 +189,7 @@
 				width: 28px;
 				line-height: 47px;
 				z-index: 1;
+				display: none !important;
 			}
 
 			label#email1-error:after {
@@ -232,6 +233,36 @@
 			text-transform: uppercase;
 			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
 			cursor: pointer;
+
+			&.success {
+				width: 100%;
+				z-index: 1;
+				background-color: #92cc4e;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 2px;
+				font-size: 0;
+				height: 51px;
+				position: relative;
+				&:after, &:before{
+				    content: "";
+					position: absolute;
+					background: #fff;
+					height: 4px;
+				}
+				&:before{
+					width: 30px;
+					transform: rotate(-44deg);
+					left: 46%;
+					top: 22px;
+				}
+				&:after{
+					width: 17px;
+					transform: rotate(45deg);
+					left: 42%;
+					top: 26px;
+				}
+			}
 		}
 	}
 
