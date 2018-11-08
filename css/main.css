@@ -77,7 +77,7 @@ a {
   margin: 0; }
   @media (max-width: 767px) {
     .h2 {
-      font-size: 38px; } }
+      font-size: 34px; } }
 
 .section-container {
   max-width: 1066px;
@@ -312,7 +312,12 @@ body, html {
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1); }
   @media (max-width: 767px) {
     .get-in-touch {
-      padding: 90px 0; } }
+      padding: 90px 0; }
+      .get-in-touch .hello-wrapper .hello-wrapper-content li {
+        padding: 20px 0 0 0; }
+      .get-in-touch .help-you-wrapper .form-submit-wrap button {
+        float: none;
+        margin: 0 auto; } }
 
 /*------------------------------------*\
     #Google Sprint 
@@ -503,18 +508,21 @@ body, html {
     .our-bg-wrapper {
       padding: 50px 0; }
       .our-bg-wrapper .our-bg-desc .our-bg-desc-content {
-        padding-bottom: 30px; }
+        padding-bottom: 30px;
+        display: block; }
       .our-bg-wrapper .our-bg-desc .col-md-4:last-child .our-bg-desc-content {
         padding-bottom: 0; }
-      .our-bg-wrapper .our-bg-profiles .our-bg-profile img {
-        width: 100%;
-        height: auto; }
-      .our-bg-wrapper .our-bg-profiles .our-bg-profile-content {
-        padding-top: 20px; }
-      .our-bg-wrapper .our-bg-profiles .our-bg-profile {
-        padding-bottom: 50px; }
-      .our-bg-wrapper .our-bg-profiles .col-md-4:last-child .our-bg-profile {
-        padding-bottom: 0; } }
+      .our-bg-wrapper .our-bg-profiles {
+        padding-top: 90px; }
+        .our-bg-wrapper .our-bg-profiles .our-bg-profile img {
+          width: 100%;
+          height: auto; }
+        .our-bg-wrapper .our-bg-profiles .our-bg-profile-content {
+          padding-top: 20px; }
+        .our-bg-wrapper .our-bg-profiles .our-bg-profile {
+          padding-bottom: 50px; }
+        .our-bg-wrapper .our-bg-profiles .col-md-4:last-child .our-bg-profile {
+          padding-bottom: 0; } }
 
 .about-us-wrapper {
   padding: 76px 0 50px; }
@@ -585,7 +593,7 @@ body, html {
     .why-google-sprint .why-GS-left {
       margin-bottom: 70px; }
     .why-google-sprint .why-GS-content h4, .why-google-sprint .why-GS-content .why-GS-contain {
-      padding: 40px;
+      padding: 30px;
       min-height: auto; } }
 
 .how-google-sprint {
@@ -698,9 +706,9 @@ body, html {
     width: 100%;
     height: 396px; }
   .DS-video-wrapper .DS-video-right img {
-    height: 76px;
-    width: 76px;
-    border: 5px solid #fff;
+    height: 75px;
+    width: 75px;
+    border: 3px solid #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 28px;
     border-radius: 50px; }
@@ -768,7 +776,7 @@ body, html {
     .wanna-DS-wrapper .wanna-DS-table h3:after {
       content: "\f0d7";
       position: absolute;
-      right: -20px;
+      right: -15px;
       top: 45%;
       font-size: 20px;
       color: #c1c5ca;
@@ -776,6 +784,8 @@ body, html {
       margin-top: -10px; }
     .wanna-DS-wrapper .wanna-DS-table th {
       width: auto; }
+    .wanna-DS-wrapper .wanna-DS-table td, .wanna-DS-wrapper .wanna-DS-table th {
+      padding: 20px; }
     .wanna-DS-wrapper .wanna-DS-table .collapse-anchor {
       cursor: pointer; }
     .wanna-DS-wrapper td, .wanna-DS-wrapper th {
@@ -869,6 +879,12 @@ body, html {
         font-size: 25px; }
   .DS-results .section-img-banner {
     height: 480px; }
+  @media (max-width: 767px) {
+    .DS-results .DS-results-content h4 {
+      word-break: break-all;
+      padding: 0 0 30px 0; }
+    .DS-results .DS-results-content p {
+      padding: 30px; } }
 
 .we-tc-wrapper .cases-panel-wrapper {
   padding-bottom: 64px; }
@@ -1297,7 +1313,13 @@ xslide
       font-size: 70px;
       font-weight: 700;
       line-height: 1.43;
-      color: #fff; }
+      color: #fff;
+      word-break: break-word; }
+  @media (max-width: 767px) {
+    .cases-hero-banner .cases-banner-content h1 {
+      font-size: 45px;
+      line-height: normal;
+      padding-bottom: 10px; } }
 
 .testimony {
   padding: 61px 0 68px; }
@@ -1315,7 +1337,7 @@ xslide
       .testimony .testimony-content .media img {
         height: 50px;
         width: 50px;
-        border: 5px solid #fff;
+        border: 3px solid #fff;
         border-radius: 50px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
         margin-right: 27px; }

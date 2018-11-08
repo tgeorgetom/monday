@@ -36,4 +36,15 @@
 	.section-img-banner{
 		height: 480px;
 	}
+	@media (max-width: 767px){
+		.DS-results-content{
+			 h4{
+				word-break: break-all;
+				padding: 0 0 30px 0;
+			}
+			p{
+				padding: 30px;
+			}
+		}
+	}
 }

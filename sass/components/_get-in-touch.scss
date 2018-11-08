@@ -90,5 +90,12 @@
 
 	@media (max-width: 767px){
 		padding: 90px 0;
+		.hello-wrapper .hello-wrapper-content li{
+			padding: 20px 0 0 0 ;
+		}
+		.help-you-wrapper .form-submit-wrap button{
+			float: none;
+			margin: 0 auto;
+		}
 	}
 }
