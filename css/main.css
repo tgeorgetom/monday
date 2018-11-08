@@ -351,6 +351,54 @@ body, html {
   .google-sprint-wrapper .google-sprint-left .h2.desc {
     color: #333132;
     font-weight: 400; }
+  .google-sprint-wrapper .google-sprint-right .email-wrapper {
+    position: relative;
+    width: 100%; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper input {
+      outline: none;
+      width: 100%; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper input::-webkit-input-placeholder {
+        color: #C7C8CC; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper input:-moz-placeholder {
+        color: #C7C8CC; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper input::-moz-placeholder {
+        color: #C7C8CC; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper input:-ms-input-placeholder {
+        color: #C7C8CC; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper svg {
+      position: absolute;
+      z-index: 1;
+      right: 14px;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      fill: none;
+      margin: -10px 0 0 0; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper svg polyline,
+      .google-sprint-wrapper .google-sprint-right .email-wrapper svg path {
+        stroke: #c9dde5;
+        stroke-width: 1.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: stroke .3s ease 0s; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper svg path {
+        stroke-dasharray: 64;
+        stroke-dashoffset: 127;
+        transition: stroke-dasharray .8s ease .8s, stroke-dashoffset .8s ease .5s; }
+      .google-sprint-wrapper .google-sprint-right .email-wrapper svg polyline {
+        stroke-dasharray: 18;
+        stroke-dashoffset: 18;
+        transition: stroke-dashoffset .5s ease 0s; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper.success svg polyline,
+    .google-sprint-wrapper .google-sprint-right .email-wrapper.success svg path {
+      stroke: #7ed321; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper.success svg path {
+      stroke-dasharray: 46;
+      stroke-dashoffset: 150;
+      transition: stroke-dasharray .6s ease 0s, stroke-dashoffset .8s ease .3s, stroke .3s ease .6s; }
+    .google-sprint-wrapper .google-sprint-right .email-wrapper.success svg polyline {
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset .5s ease .6s, stroke .3s ease .6s; }
   .google-sprint-wrapper .google-sprint-right form {
     max-width: 432px; }
   .google-sprint-wrapper .google-sprint-right .form-label {
