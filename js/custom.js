@@ -33,8 +33,10 @@ $(document).ready(function(){
       event.preventDefault();
       var hash = this.hash;
 
+      
+
       $('html, body').animate({
-          scrollTop: $(hash).offset().top - 94
+          scrollTop: $(hash).offset().top
         }, 1000,  function(){
         window.location.hash = hash;
       });
@@ -61,23 +63,18 @@ $(window).bind('scroll', function () {
   }
 });
 
-$('#email1').keypress(function(){
-  console.log("deed");
-  $(this).parents(".email-wrapper").removeClass('success');
+
+var regex = new RegExp(
+        '^(([^<>()[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\\"]+)*)|' +
+        '(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])' +
+        '|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$'
+    );
+
+$('.email-wrapper input').on('keyup', function(e) {
+    $(this).parent().toggleClass('success', regex.test($(this).val()));
 });
 
-$("#topForm").validate({
-  success: function(label) {
-      label
-        .text('OK!').addClass('valid')
-        .siblings('.fa-at').addClass('success');
-    },
-  submitHandler: function(form) {
-    $(form).submit();
-  }
- });
-
-
+$
 
 $("#sayHello").validate({
   rules: {

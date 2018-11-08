@@ -10,6 +10,7 @@
 	margin-top: 80px;
 	margin: 90px auto 0;
     max-width: 1375px;
+    @include ease-6();
 
 	h1{
 		font-size: 80px;
@@ -51,6 +52,10 @@
 	    line-height: 42px;
 	    border: 1px solid #fff;
 	    border-radius: 50%;
+
+	    i{
+	    	line-height: 42px;
+	    }
 
 	    &:after {
 		    content: "";

@@ -9,6 +9,12 @@
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box; 
+	hyphens:auto;
+    -webkit-hyphens:auto;
+    -webkit-hyphenate-character:"-";
+    -webkit-hyphenate-limit-after:1;
+    -webkit-hyphenate-limit-before:3;
+    -moz-hyphens:auto;
 }
 
 /**

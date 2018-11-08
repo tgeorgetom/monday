@@ -4,7 +4,10 @@
 
 
 .google-sprint-wrapper{
-	padding: 95px 0 135px;
+	    margin: -95px 0 135px;
+    position: relative;
+    top: 95px;
+    padding: 90px 0;
 
 	.google-sprint-left{
 		.h2{
@@ -43,6 +46,7 @@
 			position: relative;
 			overflow: hidden;
 			@include ease-2();
+			border-radius: 2px;
 
 			&:hover{
 				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -51,6 +55,7 @@
 			input{
 				position: absolute;
 				opacity: 0;
+				border-radius: 2px;
 			}
 
 			span{
@@ -70,6 +75,7 @@
 				opacity: 0;
 				@include ease-5();
 				background: #82968c;
+				border-radius: 2px;
 			}
 			input:checked ~ span, input:checked ~ span:after{
 				opacity: 1;
@@ -131,6 +137,7 @@
 				right: 10px;
 				top: 12px;
 				bottom: 0;
+				@include ease-5();
 			}
 		}
 		.google-sprint-submit{
@@ -138,7 +145,7 @@
 			background-color: #fbb13c;
 			color: #fff;
 			font-size: 14px;
-			font-weight: 900;
+			font-weight: 700;
 			max-width: 231px;
 			width: 100%;
 			display: block;
@@ -146,6 +153,8 @@
 			padding: 15px 0;
 			border: none;
 			text-transform: uppercase;
+			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+			cursor: pointer;
 		}
 	}
 
