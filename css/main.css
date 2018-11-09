@@ -30,13 +30,7 @@
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -webkit-hyphenate-character: "-";
-  -webkit-hyphenate-limit-after: 1;
-  -webkit-hyphenate-limit-before: 3;
-  -moz-hyphens: auto; }
+  box-sizing: border-box; }
 
 /**
  * Zero out margin and padding on most elements as base style
@@ -103,6 +97,14 @@ p {
     .section-img-banner {
       height: 350px !important; } }
 
+@media (max-width: 767px) {
+  * {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-character: "-";
+    -webkit-hyphenate-limit-after: 1;
+    -webkit-hyphenate-limit-before: 3;
+    -moz-hyphens: auto; } }
 /*------------------------------------*\
     #BODY
 \*------------------------------------*/
@@ -321,7 +323,8 @@ body, html {
       float: right;
       border: none;
       margin-top: 20px;
-      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1); }
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 2px; }
   @media (max-width: 767px) {
     .get-in-touch {
       padding: 90px 0; }
@@ -1051,8 +1054,10 @@ footer {
       padding-left: 35px;
       padding-bottom: 30px;
       display: block; }
-    footer .footer-contact p {
-      padding-bottom: 0px; }
+    footer .footer-contact a.gmap {
+      padding-bottom: 10px; }
+    footer .footer-contact img {
+      width: 80px; }
   footer .footer-logo {
     height: 66px;
     width: 66px;
@@ -1286,8 +1291,7 @@ xslide
 
 -------------------------------- */
 .cd-headline.slide span {
-  display: inline-block;
-  padding: .2em 0; }
+  display: inline-block; }
 
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
