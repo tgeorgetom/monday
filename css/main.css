@@ -1304,14 +1304,14 @@ xslide
 .cd-headline.slide b.is-visible {
   top: 0;
   opacity: 1;
-  -webkit-animation: slide-in 0.6s;
-  -moz-animation: slide-in 0.6s;
-  animation: slide-in 0.6s; }
+  -webkit-animation: slide-in .6s;
+  -moz-animation: slide-in .6s;
+  animation: slide-in .6s; }
 
 .cd-headline.slide b.is-hidden {
-  -webkit-animation: slide-out 0.6s;
-  -moz-animation: slide-out 0.6s;
-  animation: slide-out 0.6s; }
+  -webkit-animation: slide-out .6s;
+  -moz-animation: slide-out .6s;
+  animation: slide-out .6s; }
 
 @-webkit-keyframes slide-in {
   0% {

@@ -27,7 +27,7 @@ parallax.init();
 
 
 $(document).ready(function(){
-  $(".hero-down-arrow, .nav-link").on('click', function(event) {
+  $(".hero-down-arrow, .about-link").on('click', function(event) {
 
     if (this.hash !== "") {
       event.preventDefault();
@@ -123,7 +123,7 @@ $(document).ready(function () {
     }
 
     // Handle event onclick, setting the cookie when the href != #
-    $('.nav a').click(function (e) {
+    $('.navbar a').click(function (e) {
         e.preventDefault();
         var id = $(this).data('id');
         var href = $(this).attr('href');
