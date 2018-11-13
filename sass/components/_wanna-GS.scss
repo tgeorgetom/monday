@@ -19,12 +19,13 @@
 			line-height: 1.68;
 		}
 		h4{
-			font-weight: 700;
+			font-family: $font-bold;
 			padding-bottom: 29px;
 		}
 		p{
 			font-size: 25px;
 			font-weight: 300;
+			font-family: $font-light;
 		}
 	}
 
@@ -37,8 +38,11 @@
 			font-weight: 700;
 			line-height: 1.4;
 			position: relative;
+			font-family: $font-bold;
 		}
-
+		h4{
+			font-family: $font-bold;
+		}
 		h4, p{
 			font-size: 17px;
 			font-weight: 700;
@@ -46,6 +50,7 @@
 		}
 		p{
 			font-weight: 300;
+			font-family: $font-light;
 		}
 
 		table{

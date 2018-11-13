@@ -854,7 +854,7 @@ body, html {
     border-radius: 50px; }
   .DS-video-wrapper .DS-video-right h4 {
     font-size: 25px;
-    font-weight: 700; }
+    font-family: "Avenir-bold", sans-serif; }
   .DS-video-wrapper .DS-video-right p {
     font-size: 17px;
     font-weight: 500;
@@ -884,24 +884,29 @@ body, html {
       font-size: 25px;
       line-height: 1.68; }
     .wanna-DS-wrapper .wanna-DS-head h4 {
-      font-weight: 700;
+      font-family: "Avenir-bold", sans-serif;
       padding-bottom: 29px; }
     .wanna-DS-wrapper .wanna-DS-head p {
       font-size: 25px;
-      font-weight: 300; }
+      font-weight: 300;
+      font-family: "Avenir-light", sans-serif; }
   .wanna-DS-wrapper .wanna-DS-table {
     padding: 74px 0 0px; }
     .wanna-DS-wrapper .wanna-DS-table h3 {
       font-size: 25px;
       font-weight: 700;
       line-height: 1.4;
-      position: relative; }
+      position: relative;
+      font-family: "Avenir-bold", sans-serif; }
+    .wanna-DS-wrapper .wanna-DS-table h4 {
+      font-family: "Avenir-bold", sans-serif; }
     .wanna-DS-wrapper .wanna-DS-table h4, .wanna-DS-wrapper .wanna-DS-table p {
       font-size: 17px;
       font-weight: 700;
       line-height: 1.88; }
     .wanna-DS-wrapper .wanna-DS-table p {
-      font-weight: 300; }
+      font-weight: 300;
+      font-family: "Avenir-light", sans-serif; }
     .wanna-DS-wrapper .wanna-DS-table table {
       box-shadow: 0 2px 9px 3px rgba(0, 0, 0, 0.04); }
     .wanna-DS-wrapper .wanna-DS-table tr {
@@ -944,21 +949,24 @@ body, html {
     font-weight: 700;
     line-height: 1.68;
     color: #333132;
-    padding-bottom: 31px; }
+    padding-bottom: 31px;
+    font-family: "Avenir-bold", sans-serif; }
     .cases-panel-wrapper .cases-panel h4 span {
       color: #1b9aaa;
       font-weight: 300;
-      font-size: 25px; }
+      font-size: 25px;
+      font-family: "Avenir-light", sans-serif; }
   .cases-panel-wrapper .cases-panel p {
     padding-bottom: 40px;
     font-size: 25px;
     color: #333132;
     font-weight: 300;
-    line-height: 1.68; }
+    line-height: 1.68;
+    font-family: "Avenir-light", sans-serif; }
     .cases-panel-wrapper .cases-panel p b {
       font-size: 25px;
       color: #333132;
-      font-weight: 700; }
+      font-family: "Avenir-bold", sans-serif; }
     .cases-panel-wrapper .cases-panel p:last-child {
       padding-bottom: 0; }
 
@@ -971,7 +979,8 @@ body, html {
     padding-bottom: 30px; }
   .DS-head p {
     font-size: 25px;
-    line-height: 1.68; }
+    line-height: 1.68;
+    font-family: "Avenir-light", sans-serif; }
 
 .DS-expiration-wrapper {
   padding-top: 60px; }
@@ -988,7 +997,9 @@ body, html {
     .DS-expiration-wrapper .tag-contents .tag-content .tag-wrap:last-child {
       border-top: 2px dashed rgba(74, 74, 74, 0.1); }
     .DS-expiration-wrapper .tag-contents .tag-content .tag-wrap p {
-      height: 120px; }
+      height: 120px;
+      font-family: "Avenir", sans-serif;
+      font-size: 22px; }
   .DS-expiration-wrapper .section-img-banner {
     height: 523px;
     margin-top: 82px; }
@@ -997,6 +1008,8 @@ body, html {
   padding-top: 55px; }
   .DS-results .DS-head {
     padding-bottom: 80px; }
+    .DS-results .DS-head h2 {
+      padding-bottom: 30px; }
     .DS-results .DS-head p {
       font-weight: 400; }
   .DS-results .DS-results-content {
@@ -1006,7 +1019,8 @@ body, html {
       font-weight: 700;
       line-height: 1.31;
       padding: 0 60px 38px 60px;
-      text-align: center; }
+      text-align: center;
+      font-family: "Avenir-bold", sans-serif; }
     .DS-results .DS-results-content p {
       background-color: #f9f9f9;
       padding: 50px 50px 60px 50px;
@@ -1014,11 +1028,13 @@ body, html {
       font-size: 25px;
       line-height: 1.68;
       font-weight: 300;
-      color: #333132; }
+      color: #333132;
+      font-family: "Avenir-light", sans-serif; }
       .DS-results .DS-results-content p span {
         color: #0091ea;
         font-weight: 700;
-        font-size: 25px; }
+        font-size: 25px;
+        font-family: "Avenir-bold", sans-serif; }
   .DS-results .section-img-banner {
     height: 480px; }
   @media (max-width: 767px) {
@@ -1039,7 +1055,8 @@ body, html {
       padding-left: 30px;
       padding-bottom: 10px;
       position: relative;
-      font-weight: 700; }
+      font-family: "Avenir-bold", sans-serif;
+      font-size: 18px; }
       .we-tc-wrapper .cases-panel-wrapper .cases-panel li:before {
         content: "\f00c";
         font-family: fontawesome;
@@ -1062,7 +1079,8 @@ body, html {
   font-weight: 700;
   line-height: 1.68;
   text-align: center;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-family: "Avenir-bold", sans-serif; }
 .we-tc-wrapper .section-img-banner {
   height: 556px; }
 @media (max-width: 767px) {
@@ -1428,7 +1446,7 @@ xslide
     vertical-align: middle; }
   .talk-to-us .talk-to-us-content button {
     font-size: 17px;
-    font-weight: 700;
+    font-family: "Avenir-heavy", sans-serif;
     line-height: 1.94;
     color: #48b8d0;
     padding: 18px;
@@ -1453,7 +1471,7 @@ xslide
     padding: 80px 0 95px; }
     .cases-hero-banner .cases-banner-content h1 {
       font-size: 70px;
-      font-weight: 700;
+      font-family: "Avenir-bold", sans-serif;
       line-height: 1.43;
       color: #fff;
       word-break: break-word; }
@@ -1471,7 +1489,7 @@ xslide
     .testimony .testimony-content .testimony-desc {
       text-align: center;
       font-size: 25px;
-      font-weight: 700;
+      font-family: "Avenir-bold", sans-serif;
       line-height: 1.68; }
     .testimony .testimony-content .media {
       max-width: 170px;
@@ -1488,10 +1506,11 @@ xslide
         line-height: 2;
         text-align: left; }
       .testimony .testimony-content .media h5 {
-        font-weight: 700;
+        font-family: "Avenir-bold", sans-serif;
         color: #333132; }
       .testimony .testimony-content .media p {
-        color: #82968c; }
+        color: #82968c;
+        font-family: "Avenir-light", sans-serif; }
 
 .cases-wrapper .h2 {
   padding-bottom: 53px; }

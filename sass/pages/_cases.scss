@@ -17,7 +17,7 @@
 
 		h1{		
 			font-size: 70px;
-			font-weight: 700;
+			font-family: $font-bold;
 			line-height: 1.43;
 			color: #fff;
 			word-break: break-word;
@@ -43,7 +43,7 @@
 		.testimony-desc{
 			text-align: center;
 			font-size: 25px;
-			font-weight: 700;
+			font-family: $font-bold;
 			line-height: 1.68;
 		}
 		.media{
@@ -64,11 +64,12 @@
 				text-align: left;
 			}
 			h5{
-				font-weight: 700;
+				font-family: $font-bold;
 				color: #333132;
 			}
 			p{
 				color: #82968c;
+				font-family: $font-light;
 			}
 		}
 	}

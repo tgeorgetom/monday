@@ -14,7 +14,8 @@
 				padding-left: 30px;
 				padding-bottom: 10px;
 				position: relative;
-				font-weight: 700;
+				font-family: $font-bold;
+				font-size: 18px;
 
 			    &:before{
 			    	content: "\f00c";
@@ -45,6 +46,7 @@
 		line-height: 1.68;
 		text-align: center;
 		padding-bottom: 10px;
+		font-family: $font-bold;
 	}
 
 	.section-img-banner{
