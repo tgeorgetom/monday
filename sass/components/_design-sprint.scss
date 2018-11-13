@@ -15,10 +15,12 @@
 			text-align: left;
 			line-height: 1.41;
 			font-weight: 700;
+			font-family: $font-bold;
 		}
 		.h2.desc{
 			color: #333132;
 			font-weight: 400;
+			font-family: $font-light;
 		}
 	}
 
@@ -233,6 +235,7 @@
 			text-transform: uppercase;
 			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
 			cursor: pointer;
+			font-family: $font-heavy;
 
 			&.success {
 				width: 100%;

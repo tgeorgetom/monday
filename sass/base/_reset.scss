@@ -67,6 +67,7 @@ a{
 	text-align: center;
 	color: $text-1;
 	margin: 0;
+	font-family: $font-heavy;
 
 	@media (max-width: 767px){
 		font-size: 34px;
@@ -74,7 +75,7 @@ a{
 }
 
 .section-container{
-	max-width: 1066px;
+	max-width: 1046px;
 	margin: 0 auto;
 }
 

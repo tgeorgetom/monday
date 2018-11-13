@@ -2,8 +2,23 @@
  *  Abstracts
  */
 @font-face {
+  font-family: 'Avenir-light';
+  src: url("../fonts/AvenirLTStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Book.otf") format("opentype"), url("../fonts/AvenirLTStd-Book.woff") format("woff"), url("../fonts/AvenirLTStd-Book.ttf") format("truetype"), url("../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'Avenir';
-  src: url("../../fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirLTStd-Medium.otf") format("opentype"), url("../../fonts/AvenirLTStd-Medium.woff") format("woff"), url("../../fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("../../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  src: url("../fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Medium.otf") format("opentype"), url("../fonts/AvenirLTStd-Medium.woff") format("woff"), url("../fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir-bold';
+  src: url("../fonts/AvenirLTStd-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Heavy.otf") format("opentype"), url("../fonts/AvenirLTStd-Heavy.woff") format("woff"), url("../fonts/AvenirLTStd-Heavy.ttf") format("truetype"), url("../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir-heavy';
+  src: url("../fonts/AvenirLTStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Black.otf") format("opentype"), url("../fonts/AvenirLTStd-Black.woff") format("woff"), url("../fonts/AvenirLTStd-Black.ttf") format("truetype"), url("../fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -74,13 +89,14 @@ a {
   line-height: 1.41;
   text-align: center;
   color: #333132;
-  margin: 0; }
+  margin: 0;
+  font-family: "Avenir-heavy", sans-serif; }
   @media (max-width: 767px) {
     .h2 {
       font-size: 34px; } }
 
 .section-container {
-  max-width: 1066px;
+  max-width: 1046px;
   margin: 0 auto; }
 
 p {
@@ -148,20 +164,22 @@ body, html {
     color: #fff;
     word-break: break-word;
     max-width: 876px;
-    padding-bottom: 21px; }
+    padding-bottom: 21px;
+    font-family: "Avenir-bold", sans-serif; }
     .hero-banner-content h1 span {
       width: auto !important; }
     .hero-banner-content h1 b {
       font-size: 80px;
-      font-weight: 700;
       line-height: 1.63;
       color: #fff;
-      word-break: break-word; }
+      word-break: break-word;
+      font-family: "Avenir-bold", sans-serif; }
   .hero-banner-content p {
     font-size: 25px;
     font-weight: 700;
     line-height: 1.76;
-    color: #fff; }
+    color: #fff;
+    font-family: "Avenir-bold", sans-serif; }
   .hero-banner-content .hero-down-arrow {
     font-size: 30px;
     color: #fff;
@@ -324,7 +342,9 @@ body, html {
       border: none;
       margin-top: 20px;
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
-      border-radius: 2px; }
+      border-radius: 2px;
+      cursor: pointer;
+      font-family: "Avenir-heavy", sans-serif; }
   @media (max-width: 767px) {
     .get-in-touch {
       padding: 90px 0; }
@@ -350,10 +370,12 @@ body, html {
     color: #fbb13c;
     text-align: left;
     line-height: 1.41;
-    font-weight: 700; }
+    font-weight: 700;
+    font-family: "Avenir-bold", sans-serif; }
   .google-sprint-wrapper .google-sprint-left .h2.desc {
     color: #333132;
-    font-weight: 400; }
+    font-weight: 400;
+    font-family: "Avenir-light", sans-serif; }
   .google-sprint-wrapper .google-sprint-right .email-wrapper {
     position: relative;
     width: 100%; }
@@ -515,7 +537,8 @@ body, html {
     border: none;
     text-transform: uppercase;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: "Avenir-heavy", sans-serif; }
     .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success {
       width: 100%;
       z-index: 1;
@@ -581,26 +604,28 @@ body, html {
     padding-bottom: 63px; }
   .our-bg-wrapper .our-bg-head {
     font-size: 25px;
-    font-weight: 700;
     line-height: 1.68;
     color: #333333;
-    padding-bottom: 22px; }
+    padding-bottom: 22px;
+    font-family: "Avenir-bold", sans-serif; }
   .our-bg-wrapper .our-bg-desc li {
     font-size: 25px;
     color: #333132;
     line-height: 2;
-    font-weight: 300; }
+    font-family: "Avenir-light", sans-serif; }
   .our-bg-wrapper .our-bg-desc-content {
     display: table;
     margin: 0 auto; }
   .our-bg-wrapper .our-bg-profiles {
     padding-top: 167px; }
     .our-bg-wrapper .our-bg-profiles .our-bg-head {
-      font-weight: 600;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      font-family: "Avenir", sans-serif; }
     .our-bg-wrapper .our-bg-profiles .our-bg-head, .our-bg-wrapper .our-bg-profiles li {
       line-height: 2.22;
       font-size: 18px; }
+    .our-bg-wrapper .our-bg-profiles li {
+      font-family: "Avenir-light", sans-serif; }
     .our-bg-wrapper .our-bg-profiles .our-bg-profile img {
       height: 280px;
       max-width: 100%;
@@ -638,15 +663,17 @@ body, html {
   .about-us-wrapper .about-us-head {
     font-size: 32px;
     font-weight: 700;
+    font-family: "Avenir-bold", sans-serif;
     line-height: 1.31;
     padding-bottom: 47px; }
   .about-us-wrapper .our-vision {
     padding-bottom: 107px; }
   .about-us-wrapper .about-us-section h5 {
     padding-bottom: 44px;
-    font-weight: 700; }
+    font-weight: 700;
+    font-family: "Avenir-bold", sans-serif; }
   .about-us-wrapper .about-us-section p {
-    font-weight: 300; }
+    font-family: "Avenir-light", sans-serif; }
   .about-us-wrapper .about-us-section h5, .about-us-wrapper .about-us-section p {
     font-size: 25px;
     line-height: 1.68;
@@ -667,7 +694,8 @@ body, html {
   padding-top: 70px; }
   .why-google-sprint .h2 {
     padding-bottom: 76px;
-    font-weight: 900; }
+    font-weight: 900;
+    color: #484848; }
   .why-google-sprint .why-GS-left {
     border-top: 12px solid #f9cb53; }
   .why-google-sprint .why-GS-right {
@@ -679,7 +707,8 @@ body, html {
       font-size: 32px;
       font-weight: 700;
       line-height: 1.31;
-      color: #333132; }
+      color: #333132;
+      font-family: "Avenir-bold", sans-serif; }
     .why-google-sprint .why-GS-content .why-GS-contain {
       padding: 55px 50px 50px 50px;
       background-color: #f9f9f9;
@@ -693,7 +722,10 @@ body, html {
         color: #333132; }
       .why-google-sprint .why-GS-content .why-GS-contain h5 {
         font-weight: 700;
-        padding-bottom: 24px; }
+        padding-bottom: 24px;
+        font-family: "Avenir-bold", sans-serif; }
+      .why-google-sprint .why-GS-content .why-GS-contain p {
+        font-family: "Avenir-light", sans-serif; }
   .why-google-sprint .section-img-banner {
     height: 556px; }
   @media (max-width: 991px) {
@@ -721,7 +753,8 @@ body, html {
     font-size: 25px;
     font-weight: 700;
     line-height: 1.68;
-    margin: 67px auto 76px; }
+    margin: 67px auto 76px;
+    font-family: "Avenir-bold", sans-serif; }
 
 .tag-contents {
   text-align: center;
@@ -742,7 +775,6 @@ body, html {
   .tag-contents .tag-content button {
     background-color: #1b9aaa;
     font-size: 14px;
-    font-weight: 700;
     max-width: 231px;
     padding: 15px;
     margin-bottom: 32px;
@@ -750,17 +782,18 @@ body, html {
     text-transform: uppercase;
     width: 100%;
     border: none;
-    border-radius: 2px; }
+    border-radius: 2px;
+    font-family: "Avenir-heavy", sans-serif; }
   .tag-contents .tag-content .btn-remote {
     background-color: #fbb13c; }
   .tag-contents .tag-content h3 {
     background-color: #333132;
     color: #fff;
     font-size: 26px;
-    font-weight: 700;
     line-height: 1.62;
     padding: 15px;
-    border-radius: 2px 2px 0 0; }
+    border-radius: 2px 2px 0 0;
+    font-family: "Avenir-heavy", sans-serif; }
   .tag-contents .tag-content p {
     font-size: 25px;
     color: #333132;
@@ -771,8 +804,8 @@ body, html {
     vertical-align: middle;
     border-radius: 0 0 2px 2px;
     padding: 15px;
-    font-weight: 700;
-    word-break: break-word; }
+    word-break: break-word;
+    font-family: "Avenir-bold", sans-serif; }
   .tag-contents .tag-content .tag-wrap {
     display: table;
     width: 100%; }
@@ -1053,7 +1086,8 @@ footer {
       color: #8e999c;
       padding-left: 35px;
       padding-bottom: 30px;
-      display: block; }
+      display: block;
+      font-size: 19px; }
     footer .footer-contact a.gmap {
       padding-bottom: 10px; }
     footer .footer-contact img {
@@ -1298,20 +1332,19 @@ xslide
   vertical-align: top; }
 
 .cd-headline.slide b {
-  opacity: 0;
-  top: .2em; }
+  opacity: 0; }
 
 .cd-headline.slide b.is-visible {
   top: 0;
   opacity: 1;
-  -webkit-animation: slide-in .6s;
-  -moz-animation: slide-in .6s;
-  animation: slide-in .6s; }
+  -webkit-animation: slide-in 1s;
+  -moz-animation: slide-in 1s;
+  animation: slide-in 1s; }
 
 .cd-headline.slide b.is-hidden {
-  -webkit-animation: slide-out .6s;
-  -moz-animation: slide-out .6s;
-  animation: slide-out .6s; }
+  -webkit-animation: slide-out 1s;
+  -moz-animation: slide-out 1s;
+  animation: slide-out 1s; }
 
 @-webkit-keyframes slide-in {
   0% {

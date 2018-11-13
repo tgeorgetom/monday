@@ -20,15 +20,17 @@
 		word-break: break-word;
 		max-width: 876px;
 		padding-bottom: 21px;
+		font-family: $font-bold;
+
 		span{
 			width: auto !important;
 		}
 		b{
 			font-size: 80px;
-			font-weight: 700;
 			line-height: 1.63;
 			color: $color-white;
 			word-break: break-word;
+			font-family: $font-bold;
 		}
 	}
 	p{
@@ -36,6 +38,7 @@
 		font-weight: 700;
 		line-height: 1.76;
 		color: $color-white;
+		font-family: $font-bold;
 	}
 
 	.hero-down-arrow {

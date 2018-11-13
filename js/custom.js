@@ -81,7 +81,7 @@ $("#topForm").validate({
   },
 
   submitHandler: function(form) {
-    $(form).submit();
+    // $(form).submit();
   }
   
  });
@@ -106,10 +106,7 @@ $("#sayHello").validate({
       },
       telephone: "Enter valid phone number",
       message: "Enter your message"
-    },
-  submitHandler: function(form) {
-    $(form).submit();
-  }
+    }
  });
 
 
@@ -143,3 +140,46 @@ $(document).ready(function () {
         $('html,body').animate({ scrollTop: targetOffset }, speed);
     }
 });
+
+
+$("#sayHello").on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        console.log("dwd");
+    } else {
+        // everything looks good!
+        console.log("on");
+        submitForm();
+        event.preventDefault();
+        
+    }
+});
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var fname = $("#fname").val();
+    var lname = $("#lname").val();
+    var email = $("#email").val();
+    var telephone = $("#telephone").val();
+    var message = $("#message").val();
+    console.log(fname);
+ 
+    $.ajax({
+        type: "POST",
+        url: "php/form-submit.php",
+        data: "name=" + fname + "&email=" + email + "&message=" + message,
+        success : function(text){
+            console.log(text);
+
+            if (text == "success"){
+                formSuccess();
+                console.log("success");
+            }
+        }
+    });
+}
+function formSuccess(){
+    alert("dd");
+}
+
+

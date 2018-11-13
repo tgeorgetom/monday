@@ -1,17 +1,56 @@
+@font-face {
+  font-family: 'Avenir-light';
+  src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirLTStd-Book.otf')  format('opentype'),
+  url('../fonts/AvenirLTStd-Book.woff') format('woff'), 
+  url('../fonts/AvenirLTStd-Book.ttf')  format('truetype'), 
+  url('../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Avenir';
-  src: url('../../fonts/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),  
-  url('../../fonts/AvenirLTStd-Medium.otf')  format('opentype'),
-  url('../../fonts/AvenirLTStd-Medium.woff') format('woff'), 
-  url('../../fonts/AvenirLTStd-Medium.ttf')  format('truetype'), 
-  url('../../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  src: url('../fonts/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirLTStd-Medium.otf')  format('opentype'),
+  url('../fonts/AvenirLTStd-Medium.woff') format('woff'), 
+  url('../fonts/AvenirLTStd-Medium.ttf')  format('truetype'), 
+  url('../fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-bold';
+  src: url('../fonts/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirLTStd-Heavy.otf')  format('opentype'),
+  url('../fonts/AvenirLTStd-Heavy.woff') format('woff'), 
+  url('../fonts/AvenirLTStd-Heavy.ttf')  format('truetype'), 
+  url('../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-heavy';
+  src: url('../fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirLTStd-Black.otf')  format('opentype'),
+  url('../fonts/AvenirLTStd-Black.woff') format('woff'), 
+  url('../fonts/AvenirLTStd-Black.ttf')  format('truetype'), 
+  url('../fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 
+$font-light: 'Avenir-light', sans-serif;
+
 $font: 'Avenir', sans-serif;
+
+$font-bold: 'Avenir-bold', sans-serif;
+
+$font-heavy: 'Avenir-heavy', sans-serif;
+
 
 
 /*

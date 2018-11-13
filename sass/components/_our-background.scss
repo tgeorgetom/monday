@@ -5,16 +5,16 @@
 	}
 	.our-bg-head{
 		font-size: 25px;
-		font-weight: 700;
 		line-height: 1.68;
 		color: #333333;
 		padding-bottom: 22px;
+		font-family: $font-bold;
 	}
 	.our-bg-desc li{
 		font-size: 25px;
 		color: #333132;
 		line-height: 2;
-		font-weight: 300;
+		font-family: $font-light;
 	}
 
 	.our-bg-desc-content{
@@ -26,13 +26,16 @@
 		padding-top: 167px;
 
 		.our-bg-head{
-			font-weight: 600;
 			padding-bottom: 0;
+			font-family: $font;
 		}
 
 		.our-bg-head, li{
 			line-height: 2.22;
 			font-size: 18px;
+		}
+		li{
+			font-family: $font-light;
 		}
 		.our-bg-profile img{
 			height: 280px;

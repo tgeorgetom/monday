@@ -7,6 +7,7 @@
 	.h2{
 		padding-bottom: 76px;
 		font-weight: 900;
+		color: #484848
 	}
 	.why-GS-left{
 		border-top: 12px solid #f9cb53;
@@ -23,6 +24,7 @@
   			font-weight: 700;
   			line-height: 1.31;
   			color: #333132;
+  			font-family: $font-bold;
 		}
 		.why-GS-contain{
 			padding: 55px 50px 50px 50px;
@@ -40,6 +42,10 @@
 			h5{
 				font-weight: 700;
 				padding-bottom: 24px;
+	  			font-family: $font-bold;
+			}
+			p{
+				font-family: $font-light;
 			}
 		}
 	}
