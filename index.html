@@ -49,7 +49,7 @@ gtag('config', 'UA-128365020-1');
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 </head>
-<body>
+<body class="Home-page">
 
 <!-- Hero Banner -->
 
@@ -121,7 +121,7 @@ gtag('config', 'UA-128365020-1');
       </div>
       <div class="col-md-5">
         <div class="google-sprint-right">
-          <form id="topForm" novalidate>
+          <form id="topForm"  role="form"  novalidate>
             <div class="form-group">
               <label class="form-label">Wofür benötigst Du Unterstützung?</label>
               <div class="row">
@@ -162,7 +162,7 @@ gtag('config', 'UA-128365020-1');
               </svg>
               </div>
             </div>
-            <button type="submit" class="google-sprint-submit">weiter</button>
+            <button class="google-sprint-submit">weiter</button>
           </form>
         </div>
       </div>
@@ -563,6 +563,7 @@ gtag('config', 'UA-128365020-1');
 <!-- Footer -->
 
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script data-require="jquery-cookie@1.3.1" data-semver="1.3.1" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.js"></script>
 
@@ -572,6 +573,176 @@ gtag('config', 'UA-128365020-1');
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<div class="bottom-form-success">
+  Your Mail has been sent.!
+</div>
+
+<style>
+
+.bottom-form-success {
+    background: #48b8d0;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    text-align: center;
+    z-index: 1;
+    bottom: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.1);
+    display: none;
+}
+
+</style>
+
+<!-- Quantcast Choice. Consent Manager Tag -->
+<script type="text/javascript" async=true>
+var elem = document.createElement('script');
+elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+(function() {
+var gdprAppliesGlobally = false;
+function addFrame() {
+if (!window.frames['__cmpLocator']) {
+if (document.body) {
+var body = document.body,
+iframe = document.createElement('iframe');
+iframe.style = 'display:none';
+iframe.name = '__cmpLocator';
+body.appendChild(iframe);
+} else {
+// In the case where this stub is located in the head,
+// this allows us to inject the iframe more quickly than
+// relying on DOMContentLoaded or other events.
+setTimeout(addFrame, 5);
+}
+}
+}
+addFrame();
+function cmpMsgHandler(event) {
+var msgIsString = typeof event.data === "string";
+var json;
+if(msgIsString) {
+json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+} else {
+json = event.data;
+}
+if (json.__cmpCall) {
+var i = json.__cmpCall;
+window.__cmp(i.command, i.parameter, function(retValue, success) {
+var returnMsg = {"__cmpReturn": {
+"returnValue": retValue,
+"success": success,
+"callId": i.callId
+}};
+event.source.postMessage(msgIsString ?
+JSON.stringify(returnMsg) : returnMsg, '*');
+});
+}
+}
+window.__cmp = function (c) {
+var b = arguments;
+if (!b.length) {
+return __cmp.a;
+}
+else if (b[0] === 'ping') {
+b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
+"cmpLoaded": false}, true);
+} else if (c == '__cmp')
+return false;
+else {
+if (typeof __cmp.a === 'undefined') {
+__cmp.a = [];
+}
+__cmp.a.push([].slice.apply(b));
+}
+}
+window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+window.__cmp.msgHandler = cmpMsgHandler;
+if (window.addEventListener) {
+window.addEventListener('message', cmpMsgHandler, false);
+}
+else {
+window.attachEvent('onmessage', cmpMsgHandler);
+}
+})();
+window.__cmp('init', {
+'Language': 'de',
+'Initial Screen Title Text': 'Wir respektieren Ihre Privatsphäre',
+'Initial Screen Reject Button Text': 'Ablehnen',
+'Initial Screen Accept Button Text': 'Annehmen',
+'Initial Screen Purpose Link Text': 'Nutzungszwecke anzeigen',
+'Purpose Screen Title Text': 'Wir respektieren Ihre Privatsphäre',
+'Purpose Screen Body Text': 'Sie können Ihre bevorzugten Einwilligungseinstellungen festlegen und definieren, für welche der unten aufgeführen Zwecke Ihre Daten genutzt werden dürfen. Sie können die Einstellungen für uns unabhängig von den Einstellungen für die Drittleister festlegen. Jeder Nutzungszweck ist gesondert beschrieben, damit Sie sich ein Bild machen können, wie wir und unsere Partner Ihre Daten nutzen.',
+'Purpose Screen Vendor Link Text': 'Komplette Partnerliste ansehen',
+'Purpose Screen Cancel Button Text': 'Abbrechen',
+'Purpose Screen Save and Exit Button Text': 'Speichern &amp; verlassen',
+'Vendor Screen Title Text': 'Wir respektieren Ihre Privatsphäre',
+'Vendor Screen Body Text': 'Sie können Ihre bevorzugten Einwilligungseinstellungen für jeden aufgeführten Partner individuell festlegen. Klappen Sie hierzu die Informationen der einzelnen Partner aus, um Ihre Auswahl zu treffen und zu sehen, welche Daten diese Partner nutzen. In manchen Fällen können Unternehmen begründet durch ein berechtigtes Interesse angeben, Ihre persönlichen Daten zu nutzen, ohne Sie hierfür nach einer Einwilligung zu fragen. Sie können auf die Datenschutzrichtlinien der jeweiligen Unternehmen klicken, um weitere Informationen zu erhalten und ein Opt-Out zu aktivieren.',
+'Vendor Screen Accept All Button Text': 'Alle akzeptieren',
+'Vendor Screen Reject All Button Text': 'Alle ablehnen',
+'Vendor Screen Purposes Link Text': 'Zurück zu Nutzungszwecken',
+'Vendor Screen Cancel Button Text': 'Abbrechen',
+'Vendor Screen Save and Exit Button Text': 'Speichern &amp; verlassen',
+'Initial Screen Body Text': 'Wir und unsere Partner nutzen auf unserer Website Technologien wie beispielsweise Cookies, um Inhalte und Werbung zu personalisieren, Social-Media-Funktionen anzubieten und den Website-Traffic zu analysieren. Durch einen Klick auf die untenstehende Schaltfläche stimmen Sie dem Einsatz dieser Technologie im gesamten Internet zu. Sie können diese Einwilligung jederzeit überarbeiten oder zurücknehmen, indem Sie auf diese Website zurückkehren.',
+'Initial Screen Body Text Option': 1,
+'Publisher Name': 'New Monday GmbH',
+'Publisher Logo': 'https://www.newmonday-sprint.de/images/logo.png',
+'Consent Scope': 'service',
+});
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag -->
+<style>
+.qc-cmp-button {
+background-color: #1B9AAA !important;
+border-color: #1B9AAA !important;
+}
+.qc-cmp-button:hover {
+background-color: transparent !important;
+border-color: #1B9AAA !important;
+}
+.qc-cmp-alt-action,
+.qc-cmp-link {
+color: #1B9AAA !important;
+}
+.qc-cmp-button {
+color: #ffffff !important;
+}
+.qc-cmp-ui,
+.qc-cmp-ui .qc-cmp-main-messaging,
+.qc-cmp-ui .qc-cmp-messaging,
+.qc-cmp-ui .qc-cmp-beta-messaging,
+.qc-cmp-ui .qc-cmp-title,
+.qc-cmp-ui .qc-cmp-sub-title,
+.qc-cmp-ui .qc-cmp-purpose-info,
+.qc-cmp-ui .qc-cmp-table,
+.qc-cmp-ui .qc-cmp-table-header,
+.qc-cmp-ui .qc-cmp-vendor-list,
+.qc-cmp-ui .qc-cmp-vendor-list-title {
+color: #484848 !important;
+}
+.qc-cmp-ui a,
+.qc-cmp-ui .qc-cmp-alt-action {
+color: #1B9AAA !important;
+}
+.qc-cmp-ui {
+background-color: #f9f9f9 !important;
+}
+.qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+background-color: #fafafa !important;
+}
+.qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+background-color: #ffffff !important;
+}
+</style>
 
 <!-- Start of Async Drift Code -->
 <script>
@@ -601,6 +772,8 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('5b33hgt2kmat');
 </script>
 <!-- End of Async Drift Code -->
+
+
 
 
 </body>

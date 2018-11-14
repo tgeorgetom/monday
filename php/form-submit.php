@@ -1,13 +1,12 @@
-
-
 <?php
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "demo@gmail.com";
+        $mail_to = "dario@newmonday-sprint.de";
         
         # Sender Data
-        $subject = trim($_POST["subject"]);
+        $subject = "New Mail";
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $phone = trim($_POST["phone"]);
@@ -27,23 +26,25 @@
         $content .= "Message:\n$message\n";
 
         # email headers.
-        $headers = "From: $name &lt;$email&gt;";
+
+
 
         # Send the email.
-        $success = mail($mail_to, $subject, $content, $headers);
+        $success = mail($mail_to, $subject, $content);
         if ($success) {
             # Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "success";
         } else {
             # Set a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong, we couldn't send your message.";
         }
 
-        } else {
-            # Not a POST request, set a 403 (forbidden) response code.
-            http_response_code(403);
-            echo "There was a problem with your submission, please try again.";
-        }
+    } else {
+        # Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
+
 ?>

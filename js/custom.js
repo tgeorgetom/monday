@@ -48,18 +48,22 @@ $(document).ready(function(){
 // Fixed Nav
 
 $(window).bind('scroll', function () {
-  var about_us = $('.about-us-wrapper').offset().top;
 
-  if ($(window).scrollTop() > 100) {
-      $('.navbar').addClass('fixed-navbar');
-  } else {
-      $('.navbar').removeClass('fixed-navbar');
-  }
+  if($("body").hasClass("Home-page")){
 
-  if($(window).scrollTop() > about_us ){
-    $('.navbar').addClass('fade');
-  } else {
-    $('.navbar').removeClass('fade');
+    var about_us = $('.about-us-wrapper').offset().top;
+
+    if ($(window).scrollTop() > 100) {
+        $('.navbar').addClass('fixed-navbar');
+    } else {
+        $('.navbar').removeClass('fixed-navbar');
+    }
+
+    if($(window).scrollTop() > about_us ){
+      $('.navbar').addClass('fade');
+    } else {
+      $('.navbar').removeClass('fade');
+    }
   }
 });
 
@@ -155,10 +159,15 @@ $("#sayHello").on("submit", function (event) {
     }
 });
 
+$(".google-sprint-submit").on("click", function (event) {
+  topSubmitForm();
+});
+
 function submitForm(){
     // Initiate Variables With Form Content
     var fname = $("#fname").val();
     var lname = $("#lname").val();
+    var fullname = fname + " " + lname;
     var email = $("#email").val();
     var telephone = $("#telephone").val();
     var message = $("#message").val();
@@ -167,19 +176,44 @@ function submitForm(){
     $.ajax({
         type: "POST",
         url: "php/form-submit.php",
-        data: "name=" + fname + "&email=" + email + "&message=" + message,
+        data: "name=" + fullname + "&email=" + email + "&message=" + message + "&phone=" + telephone,
         success : function(text){
             console.log(text);
 
             if (text == "success"){
-                formSuccess();
-                console.log("success");
+                $(".bottom-form-success").fadeIn();
+                setTimeout(function(){
+                    $('#fname, #lname, #email, #telephone, #message').val("");
+                    $(".bottom-form-success").fadeOut();
+                }, 3000);
             }
         }
     });
 }
-function formSuccess(){
-    alert("dd");
+
+function topSubmitForm(){
+    // Initiate Variables With Form Content
+    var email = $("#email1").val();
+    var checkbox = $(".form-check-input:checked").val();
+    console.log(checkbox);
+ 
+    $.ajax({
+        type: "POST",
+        url: "php/form-submit-top.php",
+        data: "email=" + email + "&checkbox=" + checkbox,
+        success : function(text){
+            console.log(text);
+
+            if (text == "success"){
+                $(".google-sprint-submit").addClass('success');
+                setTimeout(function(){ 
+                    $(".google-sprint-submit, .email-wrapper").removeClass('success');
+                    $('#email1').val("");
+                    $(".form-check-input").prop("checked", false);
+                }, 3000);
+            }
+        }
+    });
 }
 
 
