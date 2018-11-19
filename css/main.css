@@ -615,7 +615,8 @@ body, html {
     font-family: "Avenir-light", sans-serif; }
   .our-bg-wrapper .our-bg-desc-content {
     display: table;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
   .our-bg-wrapper .our-bg-profiles {
     padding-top: 167px; }
     .our-bg-wrapper .our-bg-profiles .our-bg-head {

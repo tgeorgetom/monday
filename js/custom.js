@@ -206,10 +206,12 @@ function topSubmitForm(){
 
             if (text == "success"){
                 $(".google-sprint-submit").addClass('success');
+                $(".bottom-form-success").fadeIn();
                 setTimeout(function(){ 
                     $(".google-sprint-submit, .email-wrapper").removeClass('success');
                     $('#email1').val("");
                     $(".form-check-input").prop("checked", false);
+                    $(".bottom-form-success").fadeOut();
                 }, 3000);
             }
         }
