@@ -96,7 +96,6 @@ $("#sayHello").validate({
       lastname: "required",
       email: "required email",
       telephone: {
-            required: true,
             minlength: 10,
             maxlength: 10
         }
@@ -143,6 +142,12 @@ $(document).ready(function () {
         var targetOffset = obj.top - offSet;
         $('html,body').animate({ scrollTop: targetOffset }, speed);
     }
+
+    $(".chat-us").click(function(){
+      console.log('deed');
+      $('#drift-widget').trigger("click");
+    }); 
+
 });
 
 
