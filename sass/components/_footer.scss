@@ -47,12 +47,32 @@ footer{
 		    padding-left: 30px;
 		}
 	}
+	.footer-links {
+    	text-align: right;
+    	padding-top: 30px;
+
+    	li{
+			display: inline-block;
+			padding-left: 20px;
+			
+			a{
+				color: rgba(51, 51, 51, 0.4 );
+				font-size: 14px;
+			}
+    	}
+	}
+
 
 	@media (max-width: 767px){
 
 		.footer-contact {
 		    display: table;
 		    margin: 0 auto;
+
+		    img{
+				margin: 0 auto;
+				display: block;
+			}
 		}
 		.footer-logo {
 			margin: 20px auto 40px;
@@ -63,6 +83,12 @@ footer{
 				padding: 0 15px;
 			}
 		}
-	
+		.footer-links {
+			text-align: center;
+			li{
+				padding: 0 10px;
+			}
+		}
+
 	}
 }
