@@ -1728,7 +1728,7 @@ xslide
   padding-bottom: 320px; }
   @media (max-width: 767px) {
     .main {
-      padding-bottom: 390px; } }
+      padding-bottom: 90px; } }
 
 .main-content {
   padding: 100px 0px;
@@ -1767,7 +1767,7 @@ xslide
     font-family: Avenir-light; }
   @media (max-width: 767px) {
     .main-content {
-      padding: 60px 15px 100px; } }
+      padding: 60px 0px 100px; } }
 
 .fixed-footer {
   background-color: #c9dde5;
