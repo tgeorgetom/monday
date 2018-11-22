@@ -1269,16 +1269,32 @@ footer {
         transition: all 0.2s ease; }
         footer .footer-social li a:hover {
           box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2); }
+  footer .footer-links {
+    text-align: right;
+    padding-top: 30px; }
+    footer .footer-links li {
+      display: inline-block;
+      padding-left: 20px; }
+      footer .footer-links li a {
+        color: rgba(51, 51, 51, 0.4);
+        font-size: 14px; }
   @media (max-width: 767px) {
     footer .footer-contact {
       display: table;
       margin: 0 auto; }
+      footer .footer-contact img {
+        margin: 0 auto;
+        display: block; }
     footer .footer-logo {
       margin: 20px auto 40px; }
     footer .footer-social {
       text-align: center; }
       footer .footer-social li {
-        padding: 0 15px; } }
+        padding: 0 15px; }
+    footer .footer-links {
+      text-align: center; }
+      footer .footer-links li {
+        padding: 0 10px; } }
 
 .cd-title {
   position: relative;
@@ -1710,26 +1726,12 @@ xslide
   z-index: 59;
   overflow-x: hidden;
   padding-bottom: 320px; }
-  .main h1 {
-    position: fixed;
-    left: 15px;
-    top: 15px;
-    z-index: 1; }
-    .main h1 img {
-      width: 110px; }
   @media (max-width: 767px) {
     .main {
-      padding-bottom: 390px; }
-      .main h1 {
-        position: static;
-        background: #fff;
-        padding-top: 40px; }
-        .main h1 img {
-          margin: 0 auto;
-          display: block; } }
+      padding-bottom: 390px; } }
 
 .main-content {
-  padding: 130px 50px 100px 160px;
+  padding: 100px 0px;
   background: #fff;
   position: relative; }
   .main-content:before {
@@ -1750,7 +1752,8 @@ xslide
     transform: skewY(-4deg); }
   .main-content h2 {
     font-size: 50px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    word-break: break-all; }
   .main-content h3 {
     font-size: 31px;
     padding-bottom: 20px; }

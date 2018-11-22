@@ -7,32 +7,13 @@
     overflow-x: hidden;
     padding-bottom: 320px;
 
-
-     h1 {
-	    position: fixed;
-	    left: 15px;
-	    top: 15px;
-	    z-index: 1;
-		img {
-    		width: 110px;
-    	}
-    }
 	@media (max-width: 767px){
 		padding-bottom: 390px;
-		h1 {
-			position: static;
-			background: #fff;
-			padding-top: 40px;
-			img{
-				margin: 0 auto;
-				display: block;	
-			}
-		}
 	}
 }
 
 .main-content {
-    padding: 130px 50px 100px 160px;
+    padding: 100px 0px;
     background: #fff;
     position: relative;
 
@@ -55,7 +36,8 @@
 	}
 	h2 {
 	    font-size: 50px;
-	    padding-bottom: 40px;
+		padding-bottom: 40px;
+		word-break: break-all;
 	}
 	h3 {
 	    font-size: 31px;
