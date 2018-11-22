@@ -1,15 +1,15 @@
-// Dynamic background - Removed for now
+// Dynamic background 
 
 
 
-// var colors = ['#C9DDE5','#F9CB53', '#F4B266', '#CB8589', '#48B8D0', '#82968C'];
+var colors = ['bg-a','bg-b', 'bg-c', 'bg-d', 'bg-e'];
 
-// var elementExists = document.getElementById("hero-banner-content");
-// if (typeof(elementExists) != 'undefined' && elementExists != null){
+var elementExists = document.getElementById("hero-banner-content");
+if (typeof(elementExists) != 'undefined' && elementExists != null){
 
-//   document.getElementById('hero-banner-content').style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  document.getElementById('hero-banner-content').className += colors[Math.floor(Math.random() * colors.length)];
 
-// }
+}
 
 
 // Parallax Init

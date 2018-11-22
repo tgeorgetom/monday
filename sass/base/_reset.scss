@@ -139,7 +139,56 @@ p{
 	    img{
 	    	height: 90px;
 	    	width: 90px;
+			-webkit-animation-name: a-opacity;
+			-webkit-animation-duration: 1.5s;
+			animation-name: a-opacity;
+			animation-duration: 1.5s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
 	    }
 	}
 
+}
+
+
+// Animations
+
+@-webkit-keyframes w-scale {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+@keyframes w-scale {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+
+@-webkit-keyframes v-translate {
+    from {
+    	transform: translateY(40px);
+    	opacity: 0;
+    }
+    to {
+    	transform: translateY(0%);
+    	opacity: 1;
+    }
+}
+@keyframes v-translate {
+    from {
+    	transform: translateY(40px);
+    	opacity: 0;
+    }
+    to {
+    	transform: translateY(0%);
+    	opacity: 1;
+    }
+}
+
+@-webkit-keyframes a-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes a-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

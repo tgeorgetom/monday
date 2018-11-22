@@ -2,52 +2,9 @@
     #Hero Banner
 \*------------------------------------*/
 
-// Animations
-
-@-webkit-keyframes w-scale {
-    from {width: 0%;}
-    to {width: 100%;}
-}
-@keyframes w-scale {
-    from {width: 0%;}
-    to {width: 100%;}
-}
-
-
-@-webkit-keyframes v-translate {
-    from {
-    	transform: translateY(40px);
-    	opacity: 0;
-    }
-    to {
-    	transform: translateY(0%);
-    	opacity: 1;
-    }
-}
-@keyframes v-translate {
-    from {
-    	transform: translateY(40px);
-    	opacity: 0;
-    }
-    to {
-    	transform: translateY(0%);
-    	opacity: 1;
-    }
-}
-
-@-webkit-keyframes a-opacity {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@keyframes a-opacity {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 
 .hero-banner-content{
 	padding: 60px 0 60px;
-	// background-color: #82968c;
 	height: 572px;
 	position: relative;
 	margin-top: 80px;
@@ -55,6 +12,25 @@
     max-width: 1375px;
     position: relative;
     @include ease-6();
+
+    &.bg-a:after{
+    	background-color: #C9DDE5;
+    }
+
+    &.bg-b:after{
+    	background-color: #F9CB53;
+    }
+
+    &.bg-c:after{
+    	background-color: #F4B266;
+    }
+
+    &.bg-d:after{
+    	background-color: #CB8589;
+    }
+    &.bg-e:after{
+    	background-color: #48B8D0;
+    }
 
     &:after{
     	position: absolute;
@@ -66,7 +42,7 @@
     	width: 0%;
     	content: "";
     	z-index: 1;
-    	background-color: #82968c;
+    	// background-color: #82968c;
     }
 
     &.init-animate{
@@ -93,9 +69,9 @@
 			span{
 				animation-delay: 1.6s;
 				-webkit-animation-name: a-opacity;
-				-webkit-animation-duration: 1s;
+				-webkit-animation-duration: 1.5s;
 				animation-name: a-opacity;
-				animation-duration: 1s;
+				animation-duration: 1.5s;
 				animation-timing-function: ease;
 				animation-fill-mode: forwards;
 			}
@@ -140,6 +116,7 @@
 		span{
 			width: auto !important;
 			opacity: 0;
+			overflow: visible !important;
 		}
 		b{
 			font-size: 80px;
@@ -220,3 +197,7 @@
 		}
 	}
 }
+
+
+
+
