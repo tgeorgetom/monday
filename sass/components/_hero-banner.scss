@@ -2,15 +2,129 @@
     #Hero Banner
 \*------------------------------------*/
 
+// Animations
+
+@-webkit-keyframes w-scale {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+@keyframes w-scale {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+
+@-webkit-keyframes v-translate {
+    from {
+    	transform: translateY(40px);
+    	opacity: 0;
+    }
+    to {
+    	transform: translateY(0%);
+    	opacity: 1;
+    }
+}
+@keyframes v-translate {
+    from {
+    	transform: translateY(40px);
+    	opacity: 0;
+    }
+    to {
+    	transform: translateY(0%);
+    	opacity: 1;
+    }
+}
+
+@-webkit-keyframes a-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes a-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
 .hero-banner-content{
 	padding: 60px 0 60px;
-	background-color: #82968c;
+	// background-color: #82968c;
 	height: 572px;
 	position: relative;
 	margin-top: 80px;
 	margin: 90px auto 0;
     max-width: 1375px;
+    position: relative;
     @include ease-6();
+
+    &:after{
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	top: 0;
+    	bottom: 0;
+    	height: 100%;
+    	width: 0%;
+    	content: "";
+    	z-index: 1;
+    	background-color: #82968c;
+    }
+
+    &.init-animate{
+
+    	&:after{
+    		animation-delay: 1s;
+			-webkit-animation-name: w-scale;
+			-webkit-animation-duration: 1s;
+			animation-name: w-scale;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+    	}
+
+    	h1{
+    		animation-delay: 1.5s;
+			-webkit-animation-name: v-translate;
+			-webkit-animation-duration: 1.5s;
+			animation-name: v-translate;
+			animation-duration: 1.5s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+
+			span{
+				animation-delay: 1.6s;
+				-webkit-animation-name: a-opacity;
+				-webkit-animation-duration: 1s;
+				animation-name: a-opacity;
+				animation-duration: 1s;
+				animation-timing-function: ease;
+				animation-fill-mode: forwards;
+			}
+    	}
+    	p{
+    		animation-delay: 1.9s;
+			-webkit-animation-name: v-translate;
+			-webkit-animation-duration: 1s;
+			animation-name: v-translate;
+			animation-duration: 1.5s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+    	}
+    	.hero-down-arrow {
+    		animation-delay: 2s;
+			-webkit-animation-name: v-translate;
+			-webkit-animation-duration: 1.5s;
+			animation-name: v-translate;
+			animation-duration: 1.5s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+    	}
+
+    }
+
+    .container{
+    	position: relative;
+    	z-index: 2;
+    }
 
 	h1{
 		font-size: 80px;
@@ -21,9 +135,11 @@
 		max-width: 876px;
 		padding-bottom: 21px;
 		font-family: $font-bold;
+		opacity: 0;
 
 		span{
 			width: auto !important;
+			opacity: 0;
 		}
 		b{
 			font-size: 80px;
@@ -39,6 +155,7 @@
 		line-height: 1.76;
 		color: $color-white;
 		font-family: $font-bold;
+		opacity: 0;
 	}
 
 	.hero-down-arrow {
@@ -55,6 +172,8 @@
 	    line-height: 42px;
 	    border: 1px solid #fff;
 	    border-radius: 50%;
+	    z-index: 3;
+	    opacity: 0;
 
 	    i{
 	    	line-height: 42px;

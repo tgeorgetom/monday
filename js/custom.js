@@ -1,14 +1,15 @@
-// Dynamic background
+// Dynamic background - Removed for now
 
 
-var colors = ['#C9DDE5','#F9CB53', '#F4B266', '#CB8589', '#48B8D0', '#82968C'];
 
-var elementExists = document.getElementById("hero-banner-content");
-if (typeof(elementExists) != 'undefined' && elementExists != null){
+// var colors = ['#C9DDE5','#F9CB53', '#F4B266', '#CB8589', '#48B8D0', '#82968C'];
 
-  document.getElementById('hero-banner-content').style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+// var elementExists = document.getElementById("hero-banner-content");
+// if (typeof(elementExists) != 'undefined' && elementExists != null){
 
-}
+//   document.getElementById('hero-banner-content').style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+// }
 
 
 // Parallax Init
@@ -222,5 +223,48 @@ function topSubmitForm(){
         }
     });
 }
+
+
+// PreLoader
+
+
+
+(function() {
+  function id(v) {
+    return document.getElementById(v);
+  }
+  function loadbar() {
+    var ovrl = id("overlay"),
+      prog = id("progress"),
+      stat = id("progstat"),
+      img = document.images,
+      c = 0;
+    tot = img.length;
+
+    function imgLoaded() {
+      c += 1;
+      var perc = (((100 / tot) * c) << 0) + "%";
+      prog.style.width = perc;
+      stat.innerHTML = "Loading " + perc;
+      if (c === tot) return doneLoading();
+    }
+    function doneLoading() {
+      // ovrl.style.opacity = 0;
+      setTimeout(function() {
+        ovrl.classList.add("hideOverlay");
+        if($('div').hasClass('hero-banner-content')){
+          $('.hero-banner-content').addClass("init-animate");  
+        }
+      }, 1200);
+    }
+    for (var i = 0; i < tot; i++) {
+      var tImg = new Image();
+      tImg.onload = imgLoaded;
+      tImg.onerror = imgLoaded;
+      tImg.src = img[i].src;
+    }
+  }
+  document.addEventListener("DOMContentLoaded", loadbar, false);
+})();
 
 

@@ -12,6 +12,10 @@
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	}
 
+	&.fade{
+		visibility: hidden;
+	}
+
 	.header-logo{
 		height: 54px;
 		width: 54px;

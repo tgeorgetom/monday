@@ -230,12 +230,17 @@
 			width: 100%;
 			display: block;
 			border-radius: 2px;
-			padding: 15px 0;
+			padding: 17px 0 15px;
 			border: none;
 			text-transform: uppercase;
 			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
 			cursor: pointer;
 			font-family: $font-heavy;
+			@include ease-2();
+
+			&:hover{
+				box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+			}
 
 			&.success {
 				width: 100%;

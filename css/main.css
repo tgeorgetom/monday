@@ -121,6 +121,35 @@ p {
     -webkit-hyphenate-limit-after: 1;
     -webkit-hyphenate-limit-before: 3;
     -moz-hyphens: auto; } }
+#overlay {
+  background: #fff none repeat scroll 0 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1031;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  #overlay.hideOverlay {
+    opacity: 0;
+    visibility: hidden; }
+  #overlay .preloader-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); }
+    #overlay .preloader-wrapper img {
+      height: 90px;
+      width: 90px; }
+
 /*------------------------------------*\
     #BODY
 \*------------------------------------*/
@@ -145,18 +174,106 @@ body, html {
 /*------------------------------------*\
     #Hero Banner
 \*------------------------------------*/
+@-webkit-keyframes w-scale {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+@keyframes w-scale {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+@-webkit-keyframes v-translate {
+  from {
+    transform: translateY(40px);
+    opacity: 0; }
+  to {
+    transform: translateY(0%);
+    opacity: 1; } }
+@keyframes v-translate {
+  from {
+    transform: translateY(40px);
+    opacity: 0; }
+  to {
+    transform: translateY(0%);
+    opacity: 1; } }
+@-webkit-keyframes a-opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes a-opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .hero-banner-content {
   padding: 60px 0 60px;
-  background-color: #82968c;
   height: 572px;
   position: relative;
   margin-top: 80px;
   margin: 90px auto 0;
   max-width: 1375px;
+  position: relative;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease; }
+  .hero-banner-content:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    content: "";
+    z-index: 1;
+    background-color: #82968c; }
+  .hero-banner-content.init-animate:after {
+    animation-delay: 1s;
+    -webkit-animation-name: w-scale;
+    -webkit-animation-duration: 1s;
+    animation-name: w-scale;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; }
+  .hero-banner-content.init-animate h1 {
+    animation-delay: 1.5s;
+    -webkit-animation-name: v-translate;
+    -webkit-animation-duration: 1.5s;
+    animation-name: v-translate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; }
+    .hero-banner-content.init-animate h1 span {
+      animation-delay: 1.6s;
+      -webkit-animation-name: a-opacity;
+      -webkit-animation-duration: 1s;
+      animation-name: a-opacity;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards; }
+  .hero-banner-content.init-animate p {
+    animation-delay: 1.9s;
+    -webkit-animation-name: v-translate;
+    -webkit-animation-duration: 1s;
+    animation-name: v-translate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; }
+  .hero-banner-content.init-animate .hero-down-arrow {
+    animation-delay: 2s;
+    -webkit-animation-name: v-translate;
+    -webkit-animation-duration: 1.5s;
+    animation-name: v-translate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; }
+  .hero-banner-content .container {
+    position: relative;
+    z-index: 2; }
   .hero-banner-content h1 {
     font-size: 80px;
     font-weight: 700;
@@ -165,9 +282,11 @@ body, html {
     word-break: break-word;
     max-width: 876px;
     padding-bottom: 21px;
-    font-family: "Avenir-bold", sans-serif; }
+    font-family: "Avenir-bold", sans-serif;
+    opacity: 0; }
     .hero-banner-content h1 span {
-      width: auto !important; }
+      width: auto !important;
+      opacity: 0; }
     .hero-banner-content h1 b {
       font-size: 80px;
       line-height: 1.63;
@@ -179,7 +298,8 @@ body, html {
     font-weight: 700;
     line-height: 1.76;
     color: #fff;
-    font-family: "Avenir-bold", sans-serif; }
+    font-family: "Avenir-bold", sans-serif;
+    opacity: 0; }
   .hero-banner-content .hero-down-arrow {
     font-size: 30px;
     color: #fff;
@@ -193,7 +313,9 @@ body, html {
     width: 36px;
     line-height: 42px;
     border: 1px solid #fff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    z-index: 3;
+    opacity: 0; }
     .hero-banner-content .hero-down-arrow i {
       line-height: 42px; }
     .hero-banner-content .hero-down-arrow:after {
@@ -237,6 +359,8 @@ body, html {
   padding: 15px; }
   .navbar.fixed-navbar {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+  .navbar.fade {
+    visibility: hidden; }
   .navbar .header-logo {
     height: 54px;
     width: 54px; }
@@ -323,6 +447,8 @@ body, html {
     height: auto;
     resize: none;
     font-size: 14px; }
+    .get-in-touch .help-you-wrapper input:hover, .get-in-touch .help-you-wrapper textarea:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
   .get-in-touch .help-you-wrapper textarea {
     height: 190px; }
   .get-in-touch .help-you-wrapper .form-submit-wrap {
@@ -344,7 +470,14 @@ body, html {
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
       border-radius: 2px;
       cursor: pointer;
-      font-family: "Avenir-heavy", sans-serif; }
+      font-family: "Avenir-heavy", sans-serif;
+      height: 49px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      .get-in-touch .help-you-wrapper .form-submit-wrap button:hover, .get-in-touch .help-you-wrapper .form-submit-wrap a:hover {
+        box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
     .get-in-touch {
       padding: 90px 0; }
@@ -533,12 +666,18 @@ body, html {
     width: 100%;
     display: block;
     border-radius: 2px;
-    padding: 15px 0;
+    padding: 17px 0 15px;
     border: none;
     text-transform: uppercase;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    font-family: "Avenir-heavy", sans-serif; }
+    font-family: "Avenir-heavy", sans-serif;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .google-sprint-wrapper .google-sprint-right .google-sprint-submit:hover {
+      box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2); }
     .google-sprint-wrapper .google-sprint-right .google-sprint-submit.success {
       width: 100%;
       z-index: 1;
@@ -1121,6 +1260,15 @@ footer {
     footer .footer-social li {
       display: inline-block;
       padding-left: 30px; }
+      footer .footer-social li a {
+        display: block;
+        border-radius: 50%;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        footer .footer-social li a:hover {
+          box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
     footer .footer-contact {
       display: table;
@@ -1457,7 +1605,14 @@ xslide
     width: 100%;
     cursor: pointer;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 2.5px; }
+    border-radius: 2.5px;
+    height: 63px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .talk-to-us .talk-to-us-content button:hover {
+      box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2); }
 @media (max-width: 767px) {
   .talk-to-us .talk-to-us-content .h2 {
     padding: 0 0 30px 0; } }

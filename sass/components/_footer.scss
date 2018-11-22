@@ -45,6 +45,16 @@ footer{
 	    li {
 		    display: inline-block;
 		    padding-left: 30px;
+
+		    a{
+		    	display: block;
+		    	border-radius: 50%;
+		    	@include ease-2();
+
+		    	&:hover{
+					box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
+				}
+		    }
 		}
 	}
 
