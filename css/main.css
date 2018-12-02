@@ -295,7 +295,7 @@ body, html {
     line-height: 1.63;
     color: #fff;
     word-break: break-word;
-    max-width: 876px;
+    max-width: 700px;
     padding-bottom: 21px;
     font-family: "Avenir-bold", sans-serif;
     opacity: 0; }
@@ -1536,14 +1536,14 @@ xslide
 .cd-headline.slide b.is-visible {
   top: 0;
   opacity: 1;
-  -webkit-animation: slide-in 1s;
-  -moz-animation: slide-in 1s;
-  animation: slide-in 1s; }
+  -webkit-animation: slide-in 2s;
+  -moz-animation: slide-in 2s;
+  animation: slide-in 2s; }
 
 .cd-headline.slide b.is-hidden {
-  -webkit-animation: slide-out 1s;
-  -moz-animation: slide-out 1s;
-  animation: slide-out 1s; }
+  -webkit-animation: slide-out 2s;
+  -moz-animation: slide-out 2s;
+  animation: slide-out 2s; }
 
 @-webkit-keyframes slide-in {
   0% {
