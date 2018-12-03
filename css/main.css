@@ -300,9 +300,10 @@ body, html {
     font-family: "Avenir-bold", sans-serif;
     opacity: 0; }
     .hero-banner-content h1 span {
-      width: auto !important;
+      width: 100% !important;
       opacity: 0;
-      overflow: visible !important; }
+      overflow-x: visible !important;
+      overflow-y: hidden !important; }
     .hero-banner-content h1 b {
       font-size: 80px;
       line-height: 1.63;

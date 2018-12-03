@@ -52,7 +52,7 @@ $(window).bind('scroll', function () {
 
   if($("body").hasClass("Home-page")){
 
-    var about_us = $('.about-us-wrapper').offset().top;
+    var about_us = $('.about-us-wrapper').offset().top - 100;
 
     if ($(window).scrollTop() > 100) {
         $('.navbar').addClass('fixed-navbar');
@@ -255,7 +255,7 @@ function topSubmitForm(){
         if($('div').hasClass('hero-banner-content')){
           $('.hero-banner-content').addClass("init-animate");  
         }
-      }, 1200);
+      }, 100);
     }
     for (var i = 0; i < tot; i++) {
       var tImg = new Image();
