@@ -95,11 +95,7 @@ $("#sayHello").validate({
   rules: {
       firstname: "required",
       lastname: "required",
-      email: "required email",
-      telephone: {
-            minlength: 10,
-            maxlength: 10
-        }
+      email: "required email"
     },
     messages: {
       firstname: "Enter your firstname",
@@ -108,7 +104,6 @@ $("#sayHello").validate({
         required: "Enter your Email",
         email: "Please enter a valid email address.",
       },
-      telephone: "Enter valid phone number",
       message: "Enter your message"
     }
  });
