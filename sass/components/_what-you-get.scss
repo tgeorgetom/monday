@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    #Google Sprint Validate
+\*------------------------------------*/
+
+.what-you-get{
+	padding: 75px 0 0 0;
+
+	.h2{
+		padding-bottom: 90px;
+	}
+
+	.what-you-get-content{
+		padding: 0  0 100px 0;	
+
+		ul{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			align-items: center;
+			margin: 0 auto;
+
+			li{
+				
+				margin-bottom: 75px;
+				padding: 50px;
+				flex: 0 0 50%;
+
+				&.colored{
+					background-color: #f9f9f9;
+					max-width: 500px;
+					width: 100%;
+					border-radius: 0 2px 4px 0;
+					border-left: 1px solid #0091ea;
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+				}
+
+				h5{
+					font-size: 32px;
+					font-family: $font-bold;
+					max-width: 300px;
+				}
+				p{
+					font-size: 25px;
+					color: #333132;
+					font-family: $font;
+					line-height: 42px;
+
+					span{
+						font-size: 25px;
+						color: #0091ea;
+						font-family: $font-bold;
+						line-height: 42px;
+					}
+				}
+			}
+		}
+
+		a{
+			color: #0091ea;
+			font-size: 25px;
+			line-height: 1.68;
+			font-family: $font-heavy;
+			text-align: center;
+			display: block;
+		}
+	}
+}
