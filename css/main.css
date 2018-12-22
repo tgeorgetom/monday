@@ -885,7 +885,7 @@ body, html {
         margin-bottom: 0; } }
 
 .our-bg-wrapper {
-  padding: 50px 0 0; }
+  padding: 90px 0 90px; }
   .our-bg-wrapper .h2 {
     padding-bottom: 63px; }
   .our-bg-wrapper .our-bg-head {
@@ -943,6 +943,10 @@ body, html {
         .our-bg-wrapper .our-bg-profiles .col-md-4:last-child .our-bg-profile {
           padding-bottom: 0; } }
 
+.navbar-light .navbar-nav .nav-link.active:after {
+  opacity: 1;
+  width: 100%; }
+
 .about-us-wrapper {
   padding: 76px 0 50px; }
   .about-us-wrapper .h2 {
@@ -973,6 +977,81 @@ body, html {
   @media (max-width: 767px) {
     .about-us-wrapper .about-us-section img {
       margin: 50px auto 0; } }
+
+.about-us-container {
+  max-width: 1035px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.we-beleive {
+  max-width: 1375px;
+  margin: 0 auto; }
+  .we-beleive .about-us-container {
+    padding: 70px 15px 100px;
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center; }
+    .we-beleive .about-us-container h4 {
+      padding-bottom: 90px;
+      line-height: 72px;
+      font-size: 44;
+      font-family: "Avenir-light", sans-serif;
+      font-weight: normal;
+      color: #333132; }
+    .we-beleive .about-us-container p {
+      padding-top: 45px;
+      font-family: "Avenir-light", sans-serif;
+      color: #333132;
+      font-size: 25px; }
+    .we-beleive .about-us-container .we-believe-box {
+      margin-top: 45px;
+      border: 14px solid #1b9aaa;
+      padding: 60px 70px;
+      font-size: 44px;
+      font-family: "Avenir-light", sans-serif;
+      color: #333132; }
+  @media (max-width: 767px) {
+    .we-beleive .about-us-container h2 {
+      padding-bottom: 20px; }
+    .we-beleive .about-us-container h4 {
+      font-size: 30px;
+      line-height: normal; }
+    .we-beleive .about-us-container p {
+      padding-top: 0; }
+    .we-beleive .about-us-container .we-believe-box {
+      padding: 30px;
+      font-size: 30px; } }
+
+.our-vision .about-us-container {
+  padding-top: 80px; }
+.our-vision .h2 {
+  padding-bottom: 45px; }
+.our-vision ul {
+  padding-bottom: 80px;
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap; }
+  .our-vision ul li {
+    display: inline-block;
+    width: 50%; }
+    .our-vision ul li h4, .our-vision ul li p {
+      color: #333132;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 1.68; }
+    .our-vision ul li h4 {
+      padding-right: 20px;
+      font-family: "Avenir-bold", sans-serif; }
+    .our-vision ul li p {
+      font-family: "Avenir-light", sans-serif; }
+@media (max-width: 767px) {
+  .our-vision ul li {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center; }
+    .our-vision ul li h4 {
+      padding-right: 0; } }
 
 /*------------------------------------*\
     #Hero Banner

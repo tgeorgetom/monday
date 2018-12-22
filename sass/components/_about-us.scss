@@ -1,3 +1,8 @@
+.navbar-light .navbar-nav .nav-link.active:after{
+	opacity: 1;
+    width: 100%;
+}
+
 .about-us-wrapper{
 	padding: 76px 0 50px;
 
@@ -44,3 +49,127 @@
 		}
 	}
 }
+
+
+.about-us-container{
+	max-width: 1035px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// we-beleive Section
+
+.we-beleive{
+	max-width: 1375px;
+	margin: 0 auto;
+	
+	.about-us-container {
+		padding: 70px 15px 100px;
+		max-width: 1040px;
+		margin: 0 auto;
+		text-align: center;
+
+		h4{
+			padding-bottom: 90px;
+			line-height: 72px;
+			font-size: 44;
+			font-family: $font-light;
+			font-weight: normal;
+			color: #333132;
+		}
+		p{
+			padding-top: 45px;
+			font-family: $font-light;
+			color: #333132;
+			font-size: 25px;
+		}
+		.we-believe-box{
+			margin-top: 45px;
+			border: 14px solid #1b9aaa;
+			padding: 60px 70px;
+			font-size: 44px;
+			font-family: $font-light;
+			color: #333132;
+		}
+	}
+
+	@media (max-width: 767px){
+		.about-us-container {
+			h2{
+				padding-bottom: 20px;
+			}
+			h4{
+				font-size: 30px;
+				line-height: normal;
+			}
+			p{
+				padding-top: 0;
+			}
+			.we-believe-box{
+				padding: 30px;
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+// we-beleive Section
+
+
+
+
+// Our Vision Section
+
+
+.our-vision{
+
+	.about-us-container{
+		padding-top: 80px;
+	}
+
+	.h2{
+		padding-bottom: 45px;
+	} 
+	ul{
+		padding-bottom: 80px;
+		display: flex;
+		align-items: top;
+		flex-wrap: wrap;
+		
+		li{
+			display: inline-block;
+			width: 50%;
+
+			h4, p {
+				color: #333132;
+				font-size: 25px;
+				font-weight: 300;
+				line-height: 1.68;
+			}
+			h4{
+				padding-right: 20px;
+				font-family: $font-bold;
+			}
+			p{
+				font-family: $font-light;
+			}
+
+		}
+	}
+	@media (max-width: 767px){
+		ul {
+			li{
+				width: 100%;
+				padding-bottom: 20px;
+				text-align: center;
+
+				h4{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+// Our Vision Section
