@@ -1,7 +1,7 @@
 <!DOCTYPE html lang="en-US">
 <html>
 <head>
-  <title>Impressum | New Monday Design Sprint </title>
+  <title>New Monday Design Sprint</title>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/font-awesome.min.css" >
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script data-require="jquery-cookie@1.3.1" data-semver="1.3.1" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.js"></script>
 
 
 <!-- Facebook Pixel Code -->
@@ -46,9 +49,26 @@ gtag('config', 'UA-128365020-1');
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 </head>
-<body class="color-bg">
+<body class="Home-page">
 
-<section class="main">
+
+<!-- Pre Loader -->
+
+<div id="overlay" class="hover_ease_5">
+  <div class="preloader-wrapper">
+    <img src="images/newmon_logo_dark-104x104-noloop.gif" alt="Logo">
+  </div>
+  <div style="opacity: 0;" id="progress"></div>
+  <div style="opacity: 0;" id="progstat"></div>
+</div>
+
+<!-- Pre Loader -->
+
+
+<!-- Hero Banner -->
+
+<section class="hero-banner" id="hero-banner">
+  
   <header class="header">
     
     <nav class="navbar navbar-expand-md bg-light navbar-light">
@@ -64,8 +84,8 @@ gtag('config', 'UA-128365020-1');
             <li class="nav-item">
               <a class="nav-link" href="design-sprints.html">Der Design Sprint</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">Über uns</a>
+            <li class="nav-item ">
+              <a class="nav-link about-link active" href="about-us.html">Über uns</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cases.html">Cases</a>
@@ -79,40 +99,224 @@ gtag('config', 'UA-128365020-1');
     </nav>
   </header>
 
-  <!-- <h1><a href=""><img src="images/logo.svg"></a></h1> -->
-
-  <div class="main-content">
-    <div class="container">
-    <div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>New Monday GmbH <br> 
-Edisonstrasse 63<br> 
-12459 Berlin <br> 
-</p><p> <strong>Vertreten durch: </strong><br>
-Dario Zampetti<br>
-</p><p><strong>Kontakt:</strong> <br>
-Telefon: 0176-89002563<br>
-<!-- Fax: 1234-56789<br> -->
-E-Mail: <a href='mailto:hello@newmonday-sprint.de'>hello@newmonday-sprint.de</a></br></p><p><strong>Umsatzsteuer-ID: </strong> <br>
-Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.<br><br>
-<strong>Wirtschafts-ID: </strong><br>
-Musterwirtschaftsid<br>
-</p><p><strong>Aufsichtsbehörde:</strong><br>
-Musteraufsicht Musterstadt<br></p><p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
-Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Haftung für Links</strong><br><br>
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br><br><strong>Urheberrecht</strong><br><br>
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>
-Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>
-Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
-<br><br><strong>Google Analytics</strong><br><br>
-Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.<br><br><strong>Google AdSense</strong><br><br>
-Diese Website benutzt Google Adsense, einen Webanzeigendienst der Google Inc., USA (''Google''). Google Adsense verwendet sog. ''Cookies'' (Textdateien), die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Google Adsense verwendet auch sog. ''Web Beacons'' (kleine unsichtbare Grafiken) zur Sammlung von Informationen. Durch die Verwendung des Web Beacons können einfache Aktionen wie der Besucherverkehr auf der Webseite aufgezeichnet und gesammelt werden. Die durch den Cookie und/oder Web Beacon erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) werden an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website im Hinblick auf die Anzeigen auszuwerten, um Reports über die Websiteaktivitäten und Anzeigen für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Das Speichern von Cookies auf Ihrer Festplatte und die Anzeige von Web Beacons können Sie verhindern, indem Sie in Ihren Browser-Einstellungen ''keine Cookies akzeptieren'' wählen (Im MS Internet-Explorer unter ''Extras > Internetoptionen > Datenschutz > Einstellung''; im Firefox unter ''Extras > Einstellungen > Datenschutz > Cookies''); wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p><br> 
-Website Impressum erstellt durch <a href="https://www.impressum-generator.de">impressum-generator.de</a> von der <a href="https://www.kanzlei-hasselbach.de/">Kanzlei Hasselbach</a>
- </div>
-
-  </div>
-  </div>
 
 </section>
+
+<!-- Hero Banner -->
+
+<!-- We Believe -->
+
+
+<section class="we-beleive">
+  <div class="section-img-banner">
+    <img class="parallax" data-center='1' data-intensity='10'  src="images/banner-1.jpg">
+  </div>
+
+  <div class="about-us-container">
+    <ul>
+      <li>
+        <h2 class="h2">We believe in</h2>
+        <h4>Wir möchten Familienunternehmen, Start-ups und Unternehmern helfen, in kürzerer Zeit ohne Risiko mehr zu erreichen.</h4>    
+      </li>
+      <li>
+        <h2 class="h2">No Innovationstheater</h2>
+        <p>Innovation is just a word. We believe in results. </p>
+      </li>
+    </ul>
+    <div class="we-believe-box">
+      We put something tangible in the hands of our customer to give them infinitely more valuable data than just researching and documenting, then trying to build assumptions from that.
+    </div>
+  </div>
+</section>
+
+<!-- We Believe -->
+
+
+
+<!-- Our Vision -->
+
+<section class="our-vision">
+
+  <div class="section-img-banner">
+    <img class="parallax" data-center='1' data-intensity='10'  src="images/banner-1.jpg">
+  </div>
+  
+  <div class="about-us-container">
+    <div class="our-vision-content">
+      <h2 class="h2">Unser Vision</h2>
+      <ul>
+        <li>
+          <h4>New Monday dreams to help companies, start-ups, and entrepreneurs to achieve more in little time while risking less.</h4>
+        </li>
+        <li><p>Wir entwickeln einzigartige Produkte und Dienstleistungen für echte Menschen. Wir unterstützen Unternehmen zu wachsen und neue Geschäftsfelder zu erschließen.</p></li>
+      </ul>
+    </div>
+
+    <div class="our-vision-content">
+      <h2 class="h2">Unser Team</h2>
+      <ul>
+        <li>
+          <h4>Wir sind ein interdisziplinäres Team mit vielfältigen Fähigkeiten und langjähriger Erfahrung in Familien Unternehmen und Startups.</h4>
+        </li>
+        <li><p>Wir begreifen Veränderung als große Chance, versuchen immer wieder neue Perspektiven in unsere Arbeit zu integrieren und unsere eigenen Methoden kontinuierlich zu verbessern.</p></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="section-img-banner">
+    <img class="parallax" data-center='1' data-intensity='10'  src="images/banner-1.jpg">
+  </div>
+
+
+</section>
+
+<!-- Our Vision -->
+
+
+<!-- About Us Section -->
+
+<!-- <section class="about-us-wrapper" id="about-us">
+  
+  <div class="section-img-banner">
+    <img class="parallax" data-center='1' data-intensity='10'  src="images/banner-1.jpg">
+  </div>
+
+  <div class="container">
+    <div class="section-container">
+      <h2 class="h2">Über uns</h2>
+
+      <div class="about-us-content our-vision">
+        <h3 class="about-us-head">Unsere Vision</h3>
+        <div class="about-us-section">
+
+          <div class="row">
+            <div class="col-md-8">
+              <h5>Wir gestalten gemeinsam mit unseren Kunden die Zukunft und entwickeln Lösungen für die Herausforderungen von morgen.</h5>
+              <p>Wir entwickeln einzigartige Produkte und Dienstleistungen für echte Menschen. Wir unterstützen Unternehmen zu wachsen und neue Geschäftsfelder zu erschließen.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/about-1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us-content our-team">
+        <h3 class="about-us-head">Unser Team</h3>
+        <div class="about-us-section">
+
+          <div class="row">
+            <div class="col-md-8">
+              <h5>Wir sind ein interdisziplinäres Team mit vielfältigen Fähigkeiten und langjähriger Erfahrung als Mitarbeiter in traditionellen Unternehmen und Startups.</h5>
+              <p>Wir begreifen Veränderung als große Chance, versuchen immer wieder neue Perspektiven in unsere Arbeit zu integrieren und unsere eigenen Methoden kontinuierlich zu verbessern.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/about-2.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- About Us Section -->
+
+<!-- Our Background -->
+
+<section class="our-bg-wrapper">
+  <div class="container">
+    <h2 class="h2">Unser Background</h2>
+
+    <div class="our-bg-desc">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="our-bg-desc-content">
+            <h3 class="our-bg-head">User Experience Design</h3>
+            <ul>
+              <li>User Research</li>
+              <li>User Interface Design</li>
+              <li>Mobile Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-bg-desc-content">
+            <h3 class="our-bg-head">Produkt Design</h3>
+            <ul>
+              <li>Content creations</li>
+              <li>Agile</li>
+              <li>Lean Startup</li>
+              <li>Value Proposition</li>
+              <li>Business Model Canvas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-bg-desc-content">
+            <h3 class="our-bg-head">Innovation</h3>
+            <ul>
+              <li>Coaching</li>
+              <li>Facilitation</li>
+              <li>Instructional Design</li>
+              <li>Teaching</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-bg-profiles">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="our-bg-profile">
+            <img src="images/Deniz-photo.jpg" alt="profile">
+            <div class="our-bg-profile-content">
+              <h3 class="our-bg-head">Deniz Ficicioglu</h3>
+              <ul>
+                <li>User Research</li>
+                <li>Innovation manager</li>
+                <li>Speaker & Author </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-bg-profile">
+            <img src="images/profile-2.png" alt="profile">
+            <div class="our-bg-profile-content">
+              <h3 class="our-bg-head">Dario Zampetti</h3>
+              <ul>
+                <li>Product Design Consultant </li>
+                <li>Sales & Marketing</li>
+                <li>Experience  Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="our-bg-profile">
+            <img src="images/profile-3.png" alt="profile">
+            <div class="our-bg-profile-content">
+              <h3 class="our-bg-head">Laura Nielsen</h3>
+              <ul>
+                <li>Agile Coach</li>
+                <li>Trainer Facilitation </li>
+                <li>Instructional Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Our Background -->
+
 
 
 <!-- Footer -->
@@ -162,11 +366,44 @@ Website Impressum erstellt durch <a href="https://www.impressum-generator.de">im
 <!-- Footer -->
 
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script data-require="jquery-cookie@1.3.1" data-semver="1.3.1" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/Parallax.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<div class="bottom-form-success">
+  Wir haben deine Nachricht erhalten. Vielen Dank!
+</div>
+
+<style>
+
+.bottom-form-success {
+    background: #48b8d0;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 470px;
+    text-align: center;
+    z-index: 1;
+    bottom: 20px;
+    margin: 0 auto;
+    padding: 13px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.1);
+    display: none;
+    width: 90%;
+    font-size: 17px;
+}
+
+</style>
 
 
 
@@ -343,7 +580,6 @@ background-color: #fafafa !important;
 background-color: #ffffff !important;
 }
 </style>
-
 
 </body>
 </html>

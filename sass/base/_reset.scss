@@ -62,12 +62,18 @@ a{
 
 .h2{
 	font-size: 44px;
-	font-weight: 900;
 	line-height: 1.41;
 	text-align: center;
 	color: $text-1;
 	margin: 0;
 	font-family: $font-heavy;
+
+	span{
+		font-size: 44px;
+		line-height: 1.41;
+		color: $text-1;
+		font-family: $font-light;
+	}
 
 	@media (max-width: 767px){
 		font-size: 34px;
@@ -88,6 +94,7 @@ p{
 	position: relative;
 	max-width: 1375px;
 	margin: 0 auto;
+	height: 500px;
 
 	img{
 		position: absolute;

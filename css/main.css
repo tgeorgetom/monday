@@ -85,12 +85,16 @@ a {
  */
 .h2 {
   font-size: 44px;
-  font-weight: 900;
   line-height: 1.41;
   text-align: center;
   color: #333132;
   margin: 0;
   font-family: "Avenir-heavy", sans-serif; }
+  .h2 span {
+    font-size: 44px;
+    line-height: 1.41;
+    color: #333132;
+    font-family: "Avenir-light", sans-serif; }
   @media (max-width: 767px) {
     .h2 {
       font-size: 34px; } }
@@ -106,7 +110,8 @@ p {
   overflow: hidden;
   position: relative;
   max-width: 1375px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 500px; }
   .section-img-banner img {
     position: absolute; }
   @media (max-width: 767px) {
@@ -728,6 +733,131 @@ body, html {
       .google-sprint-wrapper .google-sprint-right form {
         margin: 0 auto; } }
 
+/*------------------------------------*\
+    #Google Sprint Validate
+\*------------------------------------*/
+.google-sprint-validate-wrapper {
+  padding: 70px 0 90px; }
+  .google-sprint-validate-wrapper .h2 {
+    line-height: 1.9;
+    padding-bottom: 90px; }
+    .google-sprint-validate-wrapper .h2 span {
+      display: block; }
+  .google-sprint-validate-wrapper .gs-four-validate ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .google-sprint-validate-wrapper .gs-four-validate ul li {
+      border-radius: 2px;
+      box-shadow: 0 12px 39px 3px rgba(0, 0, 0, 0.09);
+      background-color: #ffffff;
+      padding: 80px 50px;
+      display: inline-block;
+      max-width: 460px;
+      margin: 0 0px 73px 0;
+      text-align: left;
+      flex-grow: 2; }
+      .google-sprint-validate-wrapper .gs-four-validate ul li h4 {
+        font-size: 32px;
+        line-height: 1.5;
+        font-family: "Avenir-bold", sans-serif;
+        color: #333132;
+        padding-bottom: 40px; }
+      .google-sprint-validate-wrapper .gs-four-validate ul li p {
+        font-size: 25px;
+        line-height: 42px;
+        color: #333132;
+        font-family: "Avenir-light", sans-serif; }
+        .google-sprint-validate-wrapper .gs-four-validate ul li p span {
+          font-size: 25px;
+          line-height: 42px;
+          color: #1b9aaa;
+          font-family: "Avenir-bold", sans-serif; }
+  .google-sprint-validate-wrapper .gs-request-call {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center; }
+    .google-sprint-validate-wrapper .gs-request-call form {
+      display: flex;
+      justify-content: center; }
+    .google-sprint-validate-wrapper .gs-request-call input {
+      color: #d8d8d8;
+      font-size: 20px;
+      line-height: 2;
+      height: 64px;
+      padding: 15px 20px 12px;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 2px 0 0 2px;
+      border: 1px solid #d8d8d8; }
+    .google-sprint-validate-wrapper .gs-request-call button {
+      max-width: 200px;
+      width: 100%;
+      font-family: "Avenir", sans-serif;
+      font-size: 21px;
+      padding: 18px;
+      height: 64px;
+      background-color: #1b9aaa;
+      color: #fff;
+      border: none;
+      border-radius: 0 2px 2px 0; }
+    .google-sprint-validate-wrapper .gs-request-call p {
+      display: block;
+      font-size: 18px;
+      line-height: 1.78;
+      text-align: center;
+      color: rgba(0, 47, 75, 0.6);
+      padding-top: 24px; }
+
+/*------------------------------------*\
+    #Google Sprint Validate
+\*------------------------------------*/
+.what-you-get {
+  padding: 75px 0 0 0; }
+  .what-you-get .h2 {
+    padding-bottom: 90px; }
+  .what-you-get .what-you-get-content {
+    padding: 0  0 100px 0; }
+    .what-you-get .what-you-get-content ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 auto; }
+      .what-you-get .what-you-get-content ul li {
+        margin-bottom: 75px;
+        padding: 50px;
+        flex: 0 0 50%; }
+        .what-you-get .what-you-get-content ul li.colored {
+          background-color: #f9f9f9;
+          max-width: 500px;
+          width: 100%;
+          border-radius: 0 2px 4px 0;
+          border-left: 1px solid #0091ea;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+        .what-you-get .what-you-get-content ul li h5 {
+          font-size: 32px;
+          font-family: "Avenir-bold", sans-serif;
+          max-width: 300px; }
+        .what-you-get .what-you-get-content ul li p {
+          font-size: 25px;
+          color: #333132;
+          font-family: "Avenir", sans-serif;
+          line-height: 42px; }
+          .what-you-get .what-you-get-content ul li p span {
+            font-size: 25px;
+            color: #0091ea;
+            font-family: "Avenir-bold", sans-serif;
+            line-height: 42px; }
+    .what-you-get .what-you-get-content a {
+      color: #0091ea;
+      font-size: 25px;
+      line-height: 1.68;
+      font-family: "Avenir-heavy", sans-serif;
+      text-align: center;
+      display: block; }
+
 .fortune-company-wrapper {
   text-align: center; }
   .fortune-company-wrapper .fortune-company-desc {
@@ -755,7 +885,7 @@ body, html {
         margin-bottom: 0; } }
 
 .our-bg-wrapper {
-  padding: 50px 0 0; }
+  padding: 90px 0 90px; }
   .our-bg-wrapper .h2 {
     padding-bottom: 63px; }
   .our-bg-wrapper .our-bg-head {
@@ -813,6 +943,10 @@ body, html {
         .our-bg-wrapper .our-bg-profiles .col-md-4:last-child .our-bg-profile {
           padding-bottom: 0; } }
 
+.navbar-light .navbar-nav .nav-link.active:after {
+  opacity: 1;
+  width: 100%; }
+
 .about-us-wrapper {
   padding: 76px 0 50px; }
   .about-us-wrapper .h2 {
@@ -843,6 +977,81 @@ body, html {
   @media (max-width: 767px) {
     .about-us-wrapper .about-us-section img {
       margin: 50px auto 0; } }
+
+.about-us-container {
+  max-width: 1035px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.we-beleive {
+  max-width: 1375px;
+  margin: 0 auto; }
+  .we-beleive .about-us-container {
+    padding: 70px 15px 100px;
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center; }
+    .we-beleive .about-us-container h4 {
+      padding-bottom: 90px;
+      line-height: 72px;
+      font-size: 44;
+      font-family: "Avenir-light", sans-serif;
+      font-weight: normal;
+      color: #333132; }
+    .we-beleive .about-us-container p {
+      padding-top: 45px;
+      font-family: "Avenir-light", sans-serif;
+      color: #333132;
+      font-size: 25px; }
+    .we-beleive .about-us-container .we-believe-box {
+      margin-top: 45px;
+      border: 14px solid #1b9aaa;
+      padding: 60px 70px;
+      font-size: 44px;
+      font-family: "Avenir-light", sans-serif;
+      color: #333132; }
+  @media (max-width: 767px) {
+    .we-beleive .about-us-container h2 {
+      padding-bottom: 20px; }
+    .we-beleive .about-us-container h4 {
+      font-size: 30px;
+      line-height: normal; }
+    .we-beleive .about-us-container p {
+      padding-top: 0; }
+    .we-beleive .about-us-container .we-believe-box {
+      padding: 30px;
+      font-size: 30px; } }
+
+.our-vision .about-us-container {
+  padding-top: 80px; }
+.our-vision .h2 {
+  padding-bottom: 45px; }
+.our-vision ul {
+  padding-bottom: 80px;
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap; }
+  .our-vision ul li {
+    display: inline-block;
+    width: 50%; }
+    .our-vision ul li h4, .our-vision ul li p {
+      color: #333132;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 1.68; }
+    .our-vision ul li h4 {
+      padding-right: 20px;
+      font-family: "Avenir-bold", sans-serif; }
+    .our-vision ul li p {
+      font-family: "Avenir-light", sans-serif; }
+@media (max-width: 767px) {
+  .our-vision ul li {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center; }
+    .our-vision ul li h4 {
+      padding-right: 0; } }
 
 /*------------------------------------*\
     #Hero Banner
@@ -1532,12 +1741,11 @@ xslide
   vertical-align: top; }
 
 .cd-headline.slide b {
-  opacity: 0;
-  visibility: hidden; }
+  opacity: 0; }
 
 .cd-headline.slide b.is-visible {
   top: 0;
-  visibility: hidden;
+  opacity: 1;
   -webkit-animation: slide-in 1.5s;
   -moz-animation: slide-in 1.5s;
   animation: slide-in 1.5s; }
@@ -1550,20 +1758,16 @@ xslide
 @-webkit-keyframes slide-in {
   0% {
     opacity: 0;
-    visibility: hidden;
     -webkit-transform: translateY(-70%); }
   100% {
     opacity: 1;
-    visibility: visible;
     -webkit-transform: translateY(0); } }
 @-moz-keyframes slide-in {
   0% {
     opacity: 0;
-    visibility: hidden;
     -moz-transform: translateY(-70%); }
   100% {
     opacity: 1;
-    visibility: visible;
     -moz-transform: translateY(0); } }
 @keyframes slide-in {
   0% {

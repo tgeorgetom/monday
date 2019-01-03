@@ -111,25 +111,43 @@ $("#sayHello").validate({
 
 
 $(document).ready(function () {
-    // Read the cookie and if it's defined scroll to id
-    var scroll = $.cookie('scroll');
-    if(scroll){
-        scrollToID(scroll, 1000);
-        $.removeCookie('scroll');
-    }
+    
+    // // Read the cookie and if it's defined scroll to id
+    // var scroll = $.cookie('scroll');
+    // if(scroll){
+    //     scrollToID(scroll, 1000);
+    //     $.removeCookie('scroll');
+    // }
 
-    // Handle event onclick, setting the cookie when the href != #
-    $('.navbar a').click(function (e) {
-        e.preventDefault();
-        var id = $(this).data('id');
-        var href = $(this).attr('href');
-        if(href === '#'){
-            scrollToID(id, 1000);
-        }else{
-            $.cookie('scroll', id);
-            window.location.href = href;
-        }
-    });
+    // // Handle event onclick, setting the cookie when the href != #
+    // $('.navbar a').click(function (e) {
+    //     e.preventDefault();
+    //     var id = $(this).data('id');
+    //     var href = $(this).attr('href');
+    //     if(href === '#'){
+    //         scrollToID(id, 1000);
+    //     }else{
+    //         $.cookie('scroll', id);
+    //         window.location.href = href;
+    //     }
+    // });
+
+    var urlParam = window.location.href;
+
+
+    console.log(urlParam.includes('about-us-section'));
+    console.log('urlParam');
+
+
+
+    if(urlParam.includes('about-us-section')){
+      // var aboutUs = "#about-us";3
+      var aboutoffSetTop = $('#about-us').offset().top;
+
+      // console.log(offSetTop);
+
+      $('html,body').animate({ scrollTop: aboutoffSetTop }, 2000);
+    }
 
     // scrollToID function
     function scrollToID(id, speed) {
