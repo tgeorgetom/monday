@@ -457,7 +457,7 @@ body, html {
     padding: 0 15px;
     margin: 0 auto; }
   .get-in-touch .help-you-wrapper .form-group {
-    padding-bottom: 15px;
+    padding-bottom: 32px;
     position: relative;
     margin-bottom: 0; }
     .get-in-touch .help-you-wrapper .form-group label.error {
@@ -467,13 +467,12 @@ body, html {
       color: red; }
   .get-in-touch .help-you-wrapper input, .get-in-touch .help-you-wrapper textarea {
     padding: 10px 18px;
-    background: transparent;
+    background-color: rgba(201, 221, 229, 0.5);
     border-radius: 0;
+    border: none;
     height: auto;
     resize: none;
-    font-size: 14px;
-    color: #9b9b9b;
-    border: 1px solid #d8d8d8; }
+    font-size: 14px; }
     .get-in-touch .help-you-wrapper input:hover, .get-in-touch .help-you-wrapper textarea:hover {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
   .get-in-touch .help-you-wrapper textarea {
@@ -481,7 +480,7 @@ body, html {
   .get-in-touch .help-you-wrapper .form-submit-wrap {
     text-align: right; }
     .get-in-touch .help-you-wrapper .form-submit-wrap button, .get-in-touch .help-you-wrapper .form-submit-wrap a {
-      background-color: #1b9aaa;
+      background-color: #ea5752;
       padding: 15px;
       max-width: 230px;
       text-align: center;
@@ -491,6 +490,7 @@ body, html {
       color: #fff;
       width: 100%;
       display: block;
+      float: right;
       border: none;
       margin-top: 20px;
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
@@ -498,7 +498,6 @@ body, html {
       cursor: pointer;
       font-family: "Avenir-heavy", sans-serif;
       height: 49px;
-      margin: 20px auto 0;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
@@ -1818,41 +1817,6 @@ xslide
     -ms-transform: translateY(70%);
     -o-transform: translateY(70%);
     transform: translateY(70%); } }
-.articles-about-DS {
-  padding: 80px 0 0 0; }
-  .articles-about-DS .h2 {
-    padding-bottom: 50px; }
-  .articles-about-DS .medium-logo {
-    padding-bottom: 32px; }
-  .articles-about-DS .articles-content {
-    margin-bottom: 30px; }
-    .articles-about-DS .articles-content img {
-      width: 100%; }
-    .articles-about-DS .articles-content h3 {
-      padding: 30px 0 15px;
-      font-size: 26px;
-      line-height: 1.62;
-      color: #333132; }
-    .articles-about-DS .articles-content p {
-      font-size: 18px;
-      line-height: 2.33;
-      color: #333132; }
-  .articles-about-DS .viewOn-medium {
-    margin-top: 70px;
-    font-size: 25px;
-    line-height: 1.68;
-    text-align: center;
-    color: #1b9aaa;
-    display: block;
-    font-family: "Avenir-bold", sans-serif; }
-    .articles-about-DS .viewOn-medium span {
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-    .articles-about-DS .viewOn-medium:hover span {
-      padding-left: 10px; }
-
 /**
  * Pages
  */

@@ -184,25 +184,26 @@ $(".google-sprint-submit").on("click", function (event) {
 
 function submitForm(){
     // Initiate Variables With Form Content
-    var fname = $("#fname").val();
-    var lname = $("#lname").val();
-    var fullname = fname + " " + lname;
+    // var fname = $("#fname").val();
+    // var lname = $("#lname").val();
+    // var fullname = fname + " " + lname;
     var email = $("#email").val();
-    var telephone = $("#telephone").val();
+    // var telephone = $("#telephone").val();
     var message = $("#message").val();
     console.log(fname);
  
     $.ajax({
         type: "POST",
         url: "php/form-submit.php",
-        data: "name=" + fullname + "&email=" + email + "&message=" + message + "&phone=" + telephone,
+        data: "&email=" + email + "&message=" + message,
         success : function(text){
             console.log(text);
 
             if (text == "success"){
                 $(".bottom-form-success").fadeIn();
                 setTimeout(function(){
-                    $('#fname, #lname, #email, #telephone, #message').val("");
+                    // $('#fname, #lname, #email, #telephone, #message').val("");
+                    $('#email, #message').val("");
                     $(".bottom-form-success").fadeOut();
                 }, 3000);
             }

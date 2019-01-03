@@ -1,0 +1,50 @@
+.articles-about-DS{
+	padding: 80px 0 0 0;
+
+	.h2{
+		padding-bottom: 50px;
+	}
+
+	.medium-logo{
+		padding-bottom: 32px;
+	}
+
+	.articles-content{
+		margin-bottom: 30px;
+
+		img{
+			width: 100%;
+		}
+		h3{
+			padding: 30px 0 15px;
+			font-size: 26px;
+			line-height: 1.62;
+			color: #333132;
+		}
+		p{
+			font-size: 18px;
+			line-height: 2.33;
+			color: #333132;
+		}
+	}
+	.viewOn-medium{
+		margin-top: 70px;
+		font-size: 25px; 
+		line-height: 1.68;
+		text-align: center;
+		color: #1b9aaa;
+		display: block;
+		font-family: $font-bold;
+
+		span{
+			@include ease_5();
+		}
+
+		&:hover{
+			span{
+				padding-left: 10px;
+
+			}
+		}
+	}
+}

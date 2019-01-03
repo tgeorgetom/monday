@@ -41,8 +41,15 @@
 		.h2{
 			padding-bottom: 40px;
 		}
+
+		form{
+			max-width: 400px;
+			padding: 0 15px; 
+			margin: 0 auto;
+		}
+
 		.form-group{
-			padding-bottom: 32px;
+			padding-bottom: 15px;
 			position: relative;
 			margin-bottom: 0;
 			
@@ -56,12 +63,14 @@
 		}
 		input, textarea{
 			padding: 10px 18px;
-			background-color: rgba(201, 221, 229, 0.5);
+			// background-color: rgba(201, 221, 229, 0.5);
+			background: transparent;
 			border-radius: 0;
-			border: none;
 			height: auto;
 			resize: none;
 			font-size: 14px;
+			color: #9b9b9b;
+			border: 1px solid #d8d8d8;
 
 			&:hover{
 				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -74,7 +83,7 @@
 			text-align: right;
 
 			button, a{
-				background-color: #ea5752;
+				background-color: #1b9aaa;
 				padding: 15px;
 				max-width: 230px;
 				text-align: center;
@@ -84,7 +93,6 @@
 				color: #fff;
 				width: 100%;
 				display: block;
-				float: right;
 				border: none;
 				margin-top: 20px;
 				box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
@@ -92,6 +100,7 @@
 				cursor: pointer;
 				font-family: $font-heavy;
 				height: 49px;
+				margin: 20px auto 0;
 				@include ease-2();
 
 				&:hover{
