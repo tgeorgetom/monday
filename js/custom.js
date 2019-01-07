@@ -48,25 +48,25 @@ $(document).ready(function(){
 
 // Fixed Nav
 
-$(window).bind('scroll', function () {
+// $(window).bind('scroll', function () {
 
-  if($("body").hasClass("Home-page")){
+//   if($("body").hasClass("Home-page")){
 
-    var about_us = $('.about-us-wrapper').offset().top - 100;
+//     var about_us = $('.about-us-wrapper').offset().top - 100;
 
-    if ($(window).scrollTop() > 100) {
-        $('.navbar').addClass('fixed-navbar');
-    } else {
-        $('.navbar').removeClass('fixed-navbar');
-    }
+//     if ($(window).scrollTop() > 100) {
+//         $('.navbar').addClass('fixed-navbar');
+//     } else {
+//         $('.navbar').removeClass('fixed-navbar');
+//     }
 
-    if($(window).scrollTop() > about_us ){
-      $('.navbar').addClass('fade');
-    } else {
-      $('.navbar').removeClass('fade');
-    }
-  }
-});
+//     if($(window).scrollTop() > about_us ){
+//       $('.navbar').addClass('fade');
+//     } else {
+//       $('.navbar').removeClass('fade');
+//     }
+//   }
+// });
 
 
 var regex = new RegExp(
