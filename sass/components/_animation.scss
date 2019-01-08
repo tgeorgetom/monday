@@ -325,21 +325,25 @@ xslide
 }
 @-webkit-keyframes slide-out {
   0% {
-    opacity: 1;
+    // opacity: 1;
+    visibility: visible;
     -webkit-transform: translateY(0);
   }
   100% {
-    opacity: 0;
+    // opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateY(100%);
   }
 }
 @-moz-keyframes slide-out {
   0% {
-    opacity: 1;
+    // opacity: 1;
+    visibility: visible;
     -moz-transform: translateY(0);
   }
   100% {
-    opacity: 0;
+    // opacity: 0;
+    visibility: hidden;
     -moz-transform: translateY(100%);
   }
 }

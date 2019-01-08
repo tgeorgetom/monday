@@ -397,6 +397,8 @@ body, html {
 
 .navbar-light .navbar-nav .nav-link {
   color: #333132; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #333132; }
 
 .navbar-light .navbar-nav .nav-item:last-child .nav-link {
   color: #ea5752; }
@@ -757,7 +759,7 @@ body, html {
       border-radius: 2px;
       box-shadow: 0 12px 39px 3px rgba(0, 0, 0, 0.09);
       background-color: #ffffff;
-      padding: 80px 50px;
+      padding: 80px 40px 50px;
       display: inline-block;
       max-width: 460px;
       margin: 0 0px 73px 0;
@@ -1791,17 +1793,17 @@ xslide
     transform: translateY(0); } }
 @-webkit-keyframes slide-out {
   0% {
-    opacity: 1;
+    visibility: visible;
     -webkit-transform: translateY(0); }
   100% {
-    opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateY(100%); } }
 @-moz-keyframes slide-out {
   0% {
-    opacity: 1;
+    visibility: visible;
     -moz-transform: translateY(0); }
   100% {
-    opacity: 0;
+    visibility: hidden;
     -moz-transform: translateY(100%); } }
 @keyframes slide-out {
   0% {

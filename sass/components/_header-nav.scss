@@ -38,6 +38,10 @@
 
 .navbar-light .navbar-nav .nav-link{
 	color: $text-1;
+
+	&:hover{
+		color: $text-1;
+	}
 }
 .navbar-light .navbar-nav .nav-item:last-child{
 	.nav-link{
